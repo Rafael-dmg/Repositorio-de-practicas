@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+main {
+    height: 90vh;
+}
+
+.nav-bar__logo {
+    height: 3rem;
+    width: 5rem;
+    margin-right: 5px;
+}
+
+.nav-bar {
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 7fr 1fr;
+    align-items: center;
+    background-color: steelblue;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+ul > li,a {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer {
+    height: 6rem;
+    min-width: 100vh;
+    background-color: steelblue;
+}

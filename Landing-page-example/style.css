@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el header */
+  .header {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header__title {
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+  }
+  
+  .header__logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Estilos para la sección de introducción */
+  .introduccion {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .introduccion__title {
+    margin-top: 0;
+    font-size: 28px;
+  }
+  
+  .introduccion__description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .introduccion__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para la sección de destinos */
+  .caracteristicas {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .caracteristicas__title {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .caracteristicas__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .caracteristicas__item {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la sección de testimonios */
+  .testimonios {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .testimonios__title {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .testimonial__quote {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial__text {
+    font-size: 16px;
+  }
+  
+  .testimonial__author {
+    font-size: 14px;
+  }
+  
+  /* Estilos para la sección de llamado a la acción */
+  .llamado-accion {
+    background-color: #007bff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .llamado-accion__title {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .llamado-accion__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para el footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer__contacto {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .redes-sociales__item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .redes-sociales__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
