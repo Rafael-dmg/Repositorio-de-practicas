@@ -1,0 +1,11 @@
+h2 ~ p {
+    color: red;
+}/* "esto es un general sibling"*/
+
+/* h2 + p {
+    color: red;
+} este es un adjacent sibling */
+
+/* div :nth-child(3) {
+    color: red;
+}  */
