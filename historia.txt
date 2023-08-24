@@ -9,5 +9,3 @@ Ademas podemos decir que este curso lo tenemos que hacer con disciplina, pausada
 Hoy estudia para ser ingeniero de software, pero por ahora solo sabe hacer paginas web con HTML y CSS
 
 Ademas esta aprendiendo constantemente Musica e idiomas como Ingles e Italiano.
-
-Volvemos a las pruebas para eliminar o añadir o lo que podamos hacer con todos os tipos de comandos para eliminar archivos y sus modificaciones.
