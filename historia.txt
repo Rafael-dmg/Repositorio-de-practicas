@@ -9,3 +9,5 @@ Ademas podemos decir que este curso lo tenemos que hacer con disciplina, pausada
 Hoy estudia para ser ingeniero de software, pero por ahora solo sabe hacer paginas web con HTML y CSS
 
 Ademas esta aprendiendo constantemente Musica e idiomas como Ingles e Italiano.
+
+ahora probamos cambios realizados con git reset head.
