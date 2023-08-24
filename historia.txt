@@ -10,4 +10,4 @@ Hoy estudia para ser ingeniero de software, pero por ahora solo sabe hacer pagin
 
 Ademas esta aprendiendo constantemente Musica e idiomas como Ingles e Italiano.
 
-ahora probamos cambios realizados con git reset head.
+ahora probamos cambios realizados con git reset head. al parecer no funciono como pense
