@@ -1,23 +1,20 @@
-#navbar {
-    position: relative;
-    background-color: orange;
-    height: 35px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#blogicon {
-    position: relative;
-    top: 5px;
-    left: 5px;
-    width: 25px;
-    height: 25px;
-    margin: 0%;
-    padding: 0%;
-    margin-right: 10px;
+.nav {
+    height: 30%;
+    width: 100%;
+    background-color: #c7c7c7;
+    display: grid;
+    grid-template-columns: auto 2fr auto;
 }
 
-#botones {
-    margin-top: -2%;
+.nav-container {
+    width: 100%;
     display: flex;
-    justify-content: end;
-    
+    flex-direction: row;
+    justify-content: space-between;
 }
