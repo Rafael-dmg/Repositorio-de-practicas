@@ -15,19 +15,14 @@
 .nav-container {
     width: 100%;
     display: flex;
-    background-color: ;
-    flex-direction: row;
-    justify-content: ;
+    justify-content: space-between;
 }
 
 .blog-img {
-    width: 50px;
-    padding: 4px;
+    width: 30px;
 }
-
-
 
 .articles {
     display: flex;
-    justify-content: space-;
+    gap: 4px;
 }
