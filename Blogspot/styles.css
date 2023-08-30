@@ -25,4 +25,5 @@
 .articles {
     display: flex;
     gap: 4px;
+    list-style: none;
 }
