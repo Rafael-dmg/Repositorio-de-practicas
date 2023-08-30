@@ -22,6 +22,11 @@
     width: 30px;
 }
 
+.articles-list {
+    display: grid;
+    place-content: center;
+}
+
 .articles {
     display: flex;
     gap: 8px;
