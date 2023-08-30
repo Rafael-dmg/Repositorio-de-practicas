@@ -24,6 +24,10 @@
 
 .articles {
     display: flex;
-    gap: 4px;
+    gap: 8px;
     list-style: none;
+}
+
+.articles a {
+    text-decoration: none;
 }
