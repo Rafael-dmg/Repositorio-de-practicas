@@ -19,6 +19,11 @@
     justify-content: space-between;
 }
 
+.nav-container div,.search {
+    color: black;
+    font-weight: 700;
+}
+
 .explore {
     display: flex;
     justify-content: start;
@@ -26,14 +31,14 @@
     gap: 4px;
 }
 
-<<<<<<< HEAD
-=======
+/* <<<<<<< HEAD */
+/* ======= */
 .explore input,select  {
     border-radius: 8px;
     border: 1px solid #c7c7c7
 }
 
->>>>>>> header
+/* >>>>>>> header */
 .blog-img {
     width: 30px;
 }
@@ -41,6 +46,7 @@
 .articles-list {
     display: grid;
     place-content: center;
+    
 }
 
 .articles {
@@ -52,4 +58,6 @@
 
 .articles a {
     text-decoration: none;
+    color: black;
+    font-weight: 500;
 }
