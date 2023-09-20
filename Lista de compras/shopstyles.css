@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ul {
     display: flex;
     flex-direction: row;
@@ -18,3 +19,25 @@ figure #pineapple {
     height: 200px;
     width: 150px;
 }
+=======
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+figure > img {
+    height: 150px;
+    width: 150px;
+}
+
+figure #banana {
+    height: 100px;
+    width: 200px;
+}
+
+figure #pineapple {
+    height: 200px;
+    width: 150px;
+}
+>>>>>>> 569db8b305f7f392934abeb5347607de424bd206

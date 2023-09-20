@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+:root {
+  --primary-color: midnightblue;
+  --secondary-color: darkred;
+}
+
+>>>>>>> 569db8b305f7f392934abeb5347607de424bd206
 body {
   font-family: "Poppins", sans-serif;
   margin: 50px 50px 0 50px;
@@ -23,7 +31,11 @@ h1 {
 
 footer {
   text-align: right;
+<<<<<<< HEAD
   color: darkred;
+=======
+  color: var(--secondary-color);
+>>>>>>> 569db8b305f7f392934abeb5347607de424bd206
 }
 
 .title-image {
@@ -33,7 +45,11 @@ footer {
 }
 
 span {
+<<<<<<< HEAD
   color: midnightblue;
+=======
+  color: var(--primary-color)
+>>>>>>> 569db8b305f7f392934abeb5347607de424bd206
 }
 
 img {
@@ -53,11 +69,20 @@ img {
 
 @media (max-width: 480px) {
   .main {
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     object-fit: cover;
+=======
+    display: block;
+    /* align-items: center;
+    flex-direction: column;
+    justify-content: center; */
+    object-fit: cover;
+    text-align: justify;
+>>>>>>> 569db8b305f7f392934abeb5347607de424bd206
   }
 
   .left {

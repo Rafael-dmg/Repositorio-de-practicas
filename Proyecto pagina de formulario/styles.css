@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: steelblue;
 }
@@ -57,4 +58,65 @@ input {
 input.boton-form {
     width: 100px;
     margin-top: 10px;
+=======
+body {
+    background-color: steelblue;
+}
+
+.titulo {
+    background-color: papayawhip;
+    height: 30px;
+    text-align: center;
+    
+}
+
+.titulo::after, .titulo::before {
+    content: "✍️";
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    background-color: papayawhip;
+    height: 550px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 5px;
+    
+}
+
+:placeholder-shown {
+    text-align: center;
+}
+span {
+    margin: 10px;
+}
+
+textarea#mensaje {
+    height: 60px;
+}
+
+input {
+    height: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input.boton-form {
+    width: 100px;
+    margin-top: 10px;
+>>>>>>> 569db8b305f7f392934abeb5347607de424bd206
 }

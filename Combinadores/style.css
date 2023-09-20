@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h2 ~ p {
     color: red;
 }/* "esto es un general sibling"*/
@@ -8,4 +9,16 @@ h2 ~ p {
 
 /* div :nth-child(3) {
     color: red;
+=======
+h2 ~ p {
+    color: red;
+}/* "esto es un general sibling"*/
+
+/* h2 + p {
+    color: red;
+} este es un adjacent sibling */
+
+/* div :nth-child(3) {
+    color: red;
+>>>>>>> 569db8b305f7f392934abeb5347607de424bd206
 }  */

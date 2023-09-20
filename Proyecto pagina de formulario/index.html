@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,4 +58,65 @@
     </main>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Con esta pagina puedes ver un ejemplo de una pagina de formulario">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Ejemplo de formulario</title>
+</head>
+<body>
+    <Header>
+        <nav>
+            <h1 class="titulo">Encuesta</h1>
+        </nav>
+    </Header>
+    <main>
+        <form class="form" action="">
+            <label class="form__label" for="nombre">
+                <span>Nombre</span>
+                <input type="text" id="nombre" name="nombre" placeholder="tu nombre" autocomplete="name">
+            </label>
+
+            <label class="form__label" for="email">
+                <span>Correo Electronico</span>
+                <input type="email" id="email" name="email" placeholder="tu email" autocomplete="email">
+            </label>
+
+            <label class="form__label" for="edad">
+                <span>Dinos tu edad</span>
+                <input type="number" id="edad" name="edad" placeholder="tu edad">
+            </label>
+
+            <label class="form__label" for="pais">
+                <span>¿De donde nos visitas?</span>
+                <input type="text" id="pais" name="pais" placeholder="tu pais" autocomplete="country">
+            </label>
+
+            <label class="form__label" for="mensaje">
+                <span>Mensaje</span>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </label>
+            
+            <label class="form__label" for="recomendacion">
+                <span>¿Nos recomendarias a tus amigos?</span>
+                <select name="recomendacion" id="recomendacion">
+                    <option value="selecciona">Selecciona</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                    <option value="tal vez">No lo se aun</option>
+                </select>
+                </label>
+            
+            <input class="boton-form" type="submit">
+        </form>
+        
+    </main>
+    
+</body>
+>>>>>>> 569db8b305f7f392934abeb5347607de424bd206
 </html>
