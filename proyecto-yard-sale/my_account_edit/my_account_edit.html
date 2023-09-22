@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./my_account_edit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="login">
+        <section class="form-container">
+            <h1 class="title">My account</h1>
+ 
+
+            <form action="/" class="form">
+                <div>
+                    <label for="name" class="label">Name</label>
+                <p class="value">Tu-nombre aqui</p> <!--estas secciones se modificaran luego con javascript para agregar los valores que indiquen los usuarios-->
+
+                <label for="email" class="label">Email address</label>
+                <p class="value">tu-email@example.com</p>
+                
+                <label for="new-password" class="label">
+                    Password
+                </label>
+                <p class="value">**********</p>
+                </div>
+                
+
+                <input type="submit" value="Edit" class="secondary-button edit-button">
+                <!-- a esta clase se la nombro como secondary-button por la S de solid que reza que una sola clase debe cumplir una sola funcion y como solamente tenemos 2 tipos de botones, por logica debemos modificar solamente los valores de 1 solo boton y luego copiar el codigo en los demas -->
+            </form>
+        </section>
+    </main>
+</body>
+</html>

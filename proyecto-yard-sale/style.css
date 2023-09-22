@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --very-light-pink: #F7F7F7;
+    --text-input-field: #c7c7c7;
+    --hospital-green: #acd9B2;
+    --dark: #232830;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}

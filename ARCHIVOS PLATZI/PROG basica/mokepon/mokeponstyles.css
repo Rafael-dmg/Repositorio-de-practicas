@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Dots&display=swap');
+
+body {
+    font-family: 'Zen Dots', cursive;
+    
+    background-color: orangered;
+}
+
+#seleccionar-mascota {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    color: #3E6D9C;
+    font-size: 60px;
+}
+
+.subtitulo {
+ color: #3E6D9C;
+ font-size: 32px;
+}
+
+.tarjetas, .tarjetas-de-ataque  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 250px;
+    height: 100px;
+    background: #FFFBC1;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid #3E6D9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+.seleccionar {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    background: #FFFBC1;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid #3E6D9C;
+    cursor: pointer;
+    font-size: large;
+}
+ 
+/* input con el radius oculto */
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #FFE15D;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    background-color: blanchedalmond;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 140px;
+    font-size: large;
+    cursor: pointer;
+}
+
+#mensajes {
+    background-color:blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 190px;
+    margin-top: 15px;
+    
+}
+
+#boton-reiniciar {
+    font-family: 'Zen Dots', cursive;
+    border: transparent;
+    color: #3E6D9C;
+    cursor: pointer;
+}
+
+.ataques {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 140px 140px;
+    background-color: blanchedalmond;
+    margin-top: 20px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+
+/*Si mas de una seccion tiene las mismas caracteristicas las metemos todas dentro de una sola orden */
+.ataques-enemigo, .ataques-jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#ver-mapa button {
+    font-family: 'Open Sans', sans-serif;
+    width: 80px;
+    height: 30px;
+    background: #FFFBC1;
+    
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 2px solid #3E6D9C;
+    cursor: pointer;
+    font-size: large;
+}
+
+/* responsive design */
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-de-ataque  {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
