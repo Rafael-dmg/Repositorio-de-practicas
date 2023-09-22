@@ -1,0 +1,86 @@
+Aquí hay algunos problemas potenciales que pude encontrar en el código que me diste:
+
+Falta código para manejar el combate real. Actualmente solo se establecen las vidas del jugador y del enemigo, pero no hay ningún código para hacer que las mascotas ataquen o reduzcan las vidas del oponente.
+Falta código para manejar el final del juego. En caso de que alguno de los jugadores pierda todas sus vidas, no hay ningún código para mostrar un mensaje de victoria o derrota.
+Hay una variable llamada "inputLangostelvis" pero no esta siendo utilizado en ningun lugar del codigo.
+Los objetos Mokepon no tiene valores de ataques, y no esta claro cual es el proceso para asignar valores a estas mascotas.
+No esta claro cual es el proceso para que el usuario seleccione una mascota y como se relaciona con la seleccion de ataques.
+Recomendaría revisar estos puntos y asegurarte de que todos los aspectos del juego funcionen correctamente, y que el flujo del juego esté claro para los usuarios. También te recomendaría considerar la posibilidad de agregar comentarios en el código para ayudar a entender mejor lo que está sucediendo.
+
+Claro, con gusto te mostraré algunos ejemplos de cómo podrías abordar algunos de los problemas que mencioné anteriormente:
+
+Manejo del combate:
+Puedes agregar una función que se encargue de manejar el combate entre las mascotas. Por ejemplo, puedes tener una función llamada atacar() que se activa cuando el jugador elige atacar. Esta función podría reducir la vida del oponente en función del ataque elegido. Tambien, podrias hacer una funcion que maneje los ataques del oponente, y asi reducir la vida del jugador.
+Copy code
+function atacar() {
+  if (mascotaJugador) {
+    let ataqueElegido = ataqueJugador[indexAtaqueJugador];
+    vidasEnemigo -= ataqueElegido.dano;
+    updateVidaEnemigo();
+  }
+}
+Manejo del final del juego:
+Puedes agregar una función que verifique si alguno de los jugadores ha perdido todas sus vidas. Si es así, puedes mostrar un mensaje de victoria o derrota.
+Copy code
+function checkWin() {
+  if (vidasEnemigo <= 0) {
+    alert("Has ganado!");
+  } else if (vidasJugador <= 0) {
+    alert("Has perdido!");
+  }
+}
+Asignar valores de ataques a las mascotas:
+Puedes crear una clase de ataques separada, con un constructor que asigne nombre, daño, y tipo de ataque, y luego crear instancias de esta clase para asignar a cada mascota,
+Copy code
+class Ataque {
+    constructor(nombre,dano,tipo) {
+        this.nombre = nombre;
+        this.dano = dano;
+        this.tipo = tipo;
+    }
+}
+
+let ataqueFuego = new Ataque("Fuego",5,"Fuego");
+let ataqueAgua = new Ataque("Agua",5,"Agua");
+let ataqueTierra = new Ataque("Tierra",5,"Tierra");
+
+hipodoge.ataques = [ataqueFuego, ataqueTierra];
+capipepo.ataques = [ataqueAgua, ataqueTierra];
+ratigueya.ataques = [ataqueFuego, ataqueAgua];
+Ten en cuenta que estos son solo ejemplos y pueden requerir adaptaciones para funcionar en tu código. Lo importante es que tengas una idea general de cómo podrías abordar estos problemas y aplicarlos a tu código.
+-----------------------------------------------------------------------
+Bugs de funcion: secuencia de ataque()
+
+Este código parece ser parte de la lógica para manejar los ataques del jugador en tu juego. En general, el código está estructurado de manera lógica y es fácil de seguir. Sin embargo, aquí hay algunos problemas potenciales que encuentro:
+
+El código está utilizando el método push() para agregar elementos a un array, sin embargo, en este caso sería mas conveniente usar una variable para almacenar el ataque elegido y no un array.
+El código se está suscribiendo a eventos de clic en un conjunto de botones, pero no se está desabilitando los botones una vez que han sido seleccionados, lo que significa que el usuario podría seleccionar más de un ataque.
+El código esta comparando la textcontent de los botones para identificar cual ataque fue seleccionado pero esa forma de comparar es propensa a errores ya que cambios en el texto del boton o idioma podrían causar fallos en el juego.
+Para solucionar estos problemas puedes:
+
+Utilizar una variable para almacenar el ataque elegido.
+Deshabilitar los botones una vez que han sido seleccionados para evitar que el usuario elija más de un ataque.
+Identificar el ataque seleccionado usando una propiedad mas segura como el "id" o "value" del boton y no el texto.
+Ten en cuenta que estos son solo ejemplos y pueden requerir adaptaciones para funcionar en tu código. Lo importante es que tengas una idea general de cómo podrías abordar estos problemas y aplicarlos a tu código.
+
+
+
+(3*2 = 6 + 3 = 9) + (3-2 = 1) = 91
+(5*4 = 20 + 5 = 25) + (5-4 = 1) = 251
+(9*3 = 27 + 9 = 36) + (9-3 = 6) = 366
+(8*6 = 48 + 8 = 56) + (8-6 = 2) = 562
+
+3 (2+1) = 9 : (3-2) = 1 → 91
+5 (4+1) = 25 : (5-4) = 1 → 251
+9 (3+1) = 36 : (9-3) = 6 → 366
+8 (6+1) = 56 : (8-6) = 2 → 562
+
+
+background-image: url(./Assets/dd9358d7229fd4a.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+<button onclick="moverCapipepox()">→</button>
+            <button onclick="moverCapipepoy()">↓</button>
+            <button onclick="moverCapipepoxx()">←</button>
+            <button onclick="moverCapipepoyy()">↑</button>

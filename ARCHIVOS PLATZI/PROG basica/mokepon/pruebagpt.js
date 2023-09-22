@@ -1,0 +1,1 @@
+// Muestrame un ejemplo de un array de botones de movimiento para un videojuego, y crea un valor de movimiento para cada uno en un canvas y una funcion para ejecutar dichos botones de movimiento
