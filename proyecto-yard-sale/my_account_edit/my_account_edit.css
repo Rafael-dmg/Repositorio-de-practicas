@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
+:root {
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #acd9B2;
+    --dark: #232830;
+    --white: #ffffff;
+    --black: #000000;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.login {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.form-container {
+    width: 300px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.form div {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    margin: 10px 0px 24px 0px;
+    font-size: var(--lg);
+    text-align: start;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.label {
+    font-size: var(--md);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.value {
+    margin-bottom: 22px;
+    padding: 8px;
+    font-size: var(--md);
+    font-weight: 500;
+    background-color: var(--text-input-field);
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+}
+
+.secondary-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+    padding: 8px;
+    width: 100%;
+    font-size: var(--lg);
+    font-weight: 700;
+    border: 1px solid var(--hospital-green);
+    border-radius: 8px;
+    height: 60px;
+    background-color: var(--white);
+    color: var(--hospital-green);
+    cursor: pointer;
+}
+
+/* la clase se cambia a secondary para respetar la S de SOLID y darle a cada clase correspondiente una sola responsabilidad */
+
+@media (max-width: 640px) {
+    
+    .title {
+        text-align: center;
+        margin-bottom: 56px;
+        font-size: var(--lg);
+        text-align: start;
+    }
+
+    .form-container {
+        height: 100%;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
