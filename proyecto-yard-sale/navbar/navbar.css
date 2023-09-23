@@ -32,6 +32,7 @@ body {
 nav {
     display: grid;
     grid-template-columns: auto 1fr auto;
+    background-color: red;
 }
 
 .navbar-left {
