@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
+:root {
+    --very-light-pink: #F7F7F7;
+    --text-input-field: #c7c7c7;
+    --hospital-green: #acd9B2;
+    --dark: #232830;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* .my-order {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+} */
+
+.head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.head img {
+    transform: rotate(180deg);
+}
+
+.title {
+    font-size: var(--lg);
+    margin-left: 12px;
+}
+
+.my-order-container {
+    padding: 24px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%
+}
+
+.order-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping-cart figure img {
+    height: 70px;
+    width: 70px;
+    border-radius: 16px;
+    margin-top: 4px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 12px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.articles p:nth-child(2) {
+    font-size: var(--md);
+    color: var(--text-input-field);
+    font-weight: light;
+}
+
+.articles p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.articles img:hover {
+    cursor: pointer;
+}
+
+.order-detail {
+    padding: 24px 12px;
+    display: flex;
+    background-color: var(--very-light-pink);
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.order-detail :nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.order-detail :nth-child(2) {
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.primary-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+    padding: 8px;
+    width: 100%;
+    font-size: var(--lg);
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    background-color: var(--hospital-green);
+    color: #F7F7F7;
+    cursor: pointer;
+}
+
+@media (min-width: 770px) {
+    .my-order-container {
+        position: absolute;
+        right: 0;
+        width: 360px;
+    }
+}
