@@ -21,4 +21,18 @@ switch (true) {
 //si no colocamos los breaks, realiza todas las validaciones que le indiquemos, asi que son fundamentales
 
 //RETO piedra, papel o tijera:
+let usuario = []
+let pc = []
+let jugada = prompt("piedra, papel o tijera?")
+let valor = [piedra, papel, tijera]
 
+function inicio(){
+    return jugada
+}
+
+function duelo() {
+
+switch (ususario,pc,jugada) {
+    case jugador:
+}
+}
