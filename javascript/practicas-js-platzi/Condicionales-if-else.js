@@ -5,7 +5,7 @@ if (edad === 18) {
 } else if (edad > 18) {
     console.log("Puedes votar nuevamente")
 } else if (edad < 18) {
-    console.log("sabes que aun no puedes votar larva")
+    console.log("sabes que aun no puedes votar pichon")
 };
 
 //----------------------------------------------------------------------
