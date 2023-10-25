@@ -1,0 +1,19 @@
+const piedra = 'piedra';
+const papel = 'papel';
+const tijera = 'tijera';
+
+function jugadapc(cpu) {
+    cpu = Math.floor(Math.random() * 3)
+        if (cpu === 1) {
+            pc = piedra
+            console.log('piedra')
+    } else if (cpu === 2) {
+            pc = papel
+            console.log('papel')
+    } else {
+        pc = tijera
+        console.log('tijera')
+    }
+}
+
+con esta formula podemos generar la seleccion de la pc de manera aleatoria.
