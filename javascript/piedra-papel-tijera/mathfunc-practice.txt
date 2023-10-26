@@ -22,3 +22,4 @@ Math.floor() nos redondea el numero haciendo posible que tengamos un numero ente
 Math.random() nos genera el numero aleatorio y con el '* 3' le damos un rango de calculo o limite
 
 Math.random() va adentro de math.floor() porque ahi es de donde floor, va a tomar el numero que debe redondear
+
