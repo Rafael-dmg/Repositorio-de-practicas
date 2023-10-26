@@ -19,11 +19,11 @@ function jugadapc(cpu) {
         pc = tijera
         //console.log('tijera')
     }
-
-    
 }
 
 function aviso(eleccion) {
+    jugadapc()
+
     if(pc === 1) {
         eleccion = "piedra"
         alert("pc elige " + eleccion)
@@ -38,8 +38,10 @@ function aviso(eleccion) {
 
 //el aviso no se esta mostrando en el transcurso del juego
 
-function juego(usuario,pc) {
+function juego(usuario) {
     usuario = prompt("piedra, papel o tijera?")
+
+    aviso()
     
     if (usuario === "papel" && pc === "piedra") {
         alert("gana jugador")
