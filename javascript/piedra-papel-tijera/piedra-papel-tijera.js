@@ -5,12 +5,11 @@
 const piedra = 'piedra';
 const papel = 'papel';
 const tijera = 'tijera';
-let eleccion;
 let usuario;
 let pc;
 
-function jugadapc(cpu) {
-    cpu = Math.floor(Math.random() * 3)
+function jugadapc() {
+    const cpu = Math.floor(Math.random() * 3)
         if (cpu === 0) {
             pc = piedra
             //console.log('piedra')
@@ -27,15 +26,13 @@ function aviso() {
     alert("pc elige " + pc)
 };
 
-//el aviso no se esta mostrando en el transcurso del juego
 
-
-
-function juego(usuario,pc) {
+//explicacion de porque las variables de 
+function juego() {
     let usuario = prompt("piedra, papel o tijera?")
     
-    jugadapc()
-    aviso()
+    jugadapc()//asi llamamos la jugada de forma correcta
+    aviso()//el aviso debe ser llamado aqui para que se ejecute dentro de la funcion juego, justo despues de la jugada del usuario
     
     if (usuario === "papel" && pc === "piedra") {
         alert("gana jugador")
