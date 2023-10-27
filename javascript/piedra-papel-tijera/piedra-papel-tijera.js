@@ -1,3 +1,5 @@
+//comparar con el corregido por chaygpt 
+
 'use strict';
 
 const piedra = 'piedra';
@@ -9,10 +11,10 @@ let pc;
 
 function jugadapc(cpu) {
     cpu = Math.floor(Math.random() * 3)
-        if (cpu === 1) {
+        if (cpu === 0) {
             pc = piedra
             //console.log('piedra')
-    } else if (cpu === 2) {
+    } else if (cpu === 1) {
             pc = papel
             //console.log('papel')
     } else {
@@ -21,26 +23,18 @@ function jugadapc(cpu) {
     }
 }
 
-function aviso(eleccion) {
-    jugadapc()
-
-    if(pc === 1) {
-        eleccion = "piedra"
-        alert("pc elige " + eleccion)
-    }   else if (pc === 2) {
-        eleccion = "papel"
-        alert('pc elige ' + eleccion)
-    } else {
-    eleccion = "tijera"
-    alert('pc elige ' + eleccion)
-    }
+function aviso() {
+    alert("pc elige " + pc)
 };
 
 //el aviso no se esta mostrando en el transcurso del juego
 
-function juego(usuario) {
-    usuario = prompt("piedra, papel o tijera?")
 
+
+function juego(usuario,pc) {
+    let usuario = prompt("piedra, papel o tijera?")
+    
+    jugadapc()
     aviso()
     
     if (usuario === "papel" && pc === "piedra") {
