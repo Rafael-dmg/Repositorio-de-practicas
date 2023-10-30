@@ -2,8 +2,8 @@ const piedra = 'piedra';
 const papel = 'papel';
 const tijera = 'tijera';
 
-function jugadapc(cpu) {
-    cpu = Math.floor(Math.random() * 3)
+function jugadapc() {
+    const cpu = Math.floor(Math.random() * 3)
         if (cpu === 1) {
             pc = piedra
             console.log('piedra')
