@@ -1,4 +1,4 @@
-let acordes = ["do", "re", "mi", "fa"] //DATO IMPORTANTE: Un array no guarda 'datos distintos' por ejemplo: no puede guardar numeros y strings en un mismo array
+let acordes = ["do", "re", "mi", "fa"] //DATO IMPORTANTE: Un array puede guardar 'datos distintos' por ejemplo: puede guardar numeros y strings en un mismo array
 
 console.log(acordes)//para ver el contenido
 
