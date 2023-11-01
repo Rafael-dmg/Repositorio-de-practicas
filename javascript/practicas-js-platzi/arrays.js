@@ -25,8 +25,15 @@ posicion//se debe llamar luego a la variable para poder saber el resultado de la
 
 
 
+function solution(arraySecreto) {
+  return typeof (acordes[0] === String) //esta version esta mal resuelta ya que no debe de tener los parentesis, los parentesis son usados para 'encapsular' un solo valor
+}
 
+//la version correcta es
 
+function solution(arraySecreto) {
+  return typeof acordes[0] === "string" //esta version nos arroja el resultado solicitadoen el ejercicio. Cabe aclarar que el string esta entre comillas para que se entienda como tal
+}
 
 
 
