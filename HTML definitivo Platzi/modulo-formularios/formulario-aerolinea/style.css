@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    text-align: center;
+    background-color: slategray;
+    padding: 40px;
+}
+
+.destino {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-content: center;
+    padding: 24px;
+}
+
+.lugares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.seleccion {
+    margin-bottom: 6px;
+}
