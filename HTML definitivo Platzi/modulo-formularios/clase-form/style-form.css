@@ -64,3 +64,14 @@ div > h1 {
     font-weight: 300;
 }
 
+/* .lista li:nth-child(3) a {
+    color: red;
+/* } esto solo selecciona los 3 ultimos elementos de cad lista no selecciona el elemento especifico al cual queremos apuntar que es 'ditinto'. Se debe a que en CSS no existe una manera de acceder a ese elemento si no tiene algun tipo de distincion de entre otros bloques de codigo. Con jquery si es posible pero por el momento no entraremos en ese mundo.
+
+/* la solucion es distinguir el elemento con una clase especifica, aunque no sea una buena practica, en algunos casos puntuales es util. Solo no se debe abusar del usoo de clases individuales*/
+
+a.unico {
+    color: red;
+}
+
+/* Conclusion: apuntamos al elemento con la clase especifica y ya podemos modificarlo */
