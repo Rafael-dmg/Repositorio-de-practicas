@@ -10,7 +10,8 @@
 </head>
 <body>
     <form action="#" class="form-container">
-        <h1 class="title">Reservacion Aerea</h1>
+        <div class="bloque1">
+            <h1 class="title">Reservacion Aerea</h1>
         <div class="destino">
             <div class="subtitle">
                 <p>Saliendo de:</p>
@@ -51,26 +52,31 @@
             </div>
         </div>
 
-        <div class="salida">
-            <label for="fecha">
-                <span>Fecha de salida<span class="asterisco"> * </span></span>
+        </div>
+        
+
+        <div class="bloque2">
+        <div class="sub-bloque">
+            <label for="salida" class="salida">
+                <span>Fecha de salida<span> * </span></span>
                 <input type="date" required>
             </label>
         </div>
 
-        <div class="salida">
-            <label for="fecha">
-                <span>Fecha de salida<span class="asterisco"> * </span></span>
+        <div class="sub-bloque">
+            <label for="regreso" class="salida">
+                <span>Fecha de salida<span> * </span></span>
                 <input type="date" required>
             </label>
         </div>
 
-        <div class="salida">
-            <label for="fecha">
+        <div class="sub-bloque">
+            <label for="pasajeros" class="salida">
                 <span>Pasajeros</span>
                 <input type="number" required>
             </label>
         </div>
+    </div>
     </form>
 </body>
 </html>
