@@ -3,21 +3,27 @@ let finalResult;
     let evenOddResult;
 
     // Add your code here
-    let num1 = 2
-    let num2 = 4
-    let num3 = 8
-    let num4 = 16
+    let num1 = 2;
+    let num2 = 4;
+    let num3 = 8;
+    let num4 = 16;
 
-function operation (numx, numy) {
+function operation () {
    var numx = num2 + num1;
    var numy = num4 - num3;
 
 finalResult = numx * numy;
 
-evenOddResult = finalResult;
+function check(finalResult) {
+    var resto = finalResult % 2 === 0;
 
-return evenOddResult % 2 === 0 ? true : false;
-
+    if(resto === 0) {
+        evenOddResult = 0
+    } else if (resto != 0) {
+        evenOddResult !=0
+    }
+}
+    check()
 }
 
 operation()
