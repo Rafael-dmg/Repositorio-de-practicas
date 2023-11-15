@@ -33,7 +33,6 @@
 .seleccion {
     margin-bottom: 6px;
 }
-
 .bloque2 {
     display: flex;
     flex-direction: column;
@@ -43,12 +42,12 @@
 }
 
 .salida {
-    /* width: 100%; */
+    width: 100%;
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.33fr 0.3fr;
     margin-bottom: 12px;
 }
 
-.salida label span > span {
+span span {
     color: red;
 }
