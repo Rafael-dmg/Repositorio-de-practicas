@@ -45,9 +45,10 @@
     width: 100%;
     display: grid;
     grid-template-columns: 0.33fr 0.3fr;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 }
 
 span span {
     color: red;
 }
+
