@@ -14,16 +14,7 @@ function operation () {
 
 finalResult = numx * numy;
 
-function check(finalResult) {
-    var resto = finalResult % 2 === 0;
-
-    if(resto === 0) {
-        evenOddResult = 0
-    } else if (resto != 0) {
-        evenOddResult !=0
-    }
-}
-    check()
+evenOddResult = finalResult % 2;
 }
 
 operation()
@@ -42,3 +33,5 @@ operation()
 
     section.appendChild(para1);
     section.appendChild(para2);
+
+    //lo logre nojodaaaaaa
