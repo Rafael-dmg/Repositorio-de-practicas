@@ -48,6 +48,15 @@
     margin-bottom: 24px;
 }
 
+.inspan {
+    display: flex;
+    flex-direction: column;
+}
+
+.inspan span {
+    margin-top: 4px;
+}
+
 span span {
     color: red;
 }
