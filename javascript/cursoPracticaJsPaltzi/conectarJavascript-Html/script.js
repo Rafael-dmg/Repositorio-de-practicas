@@ -42,3 +42,15 @@ titulo.classList.remove('verde')//removemos clses :V
 
 //titulo.classList.contains(""); es ocmo una especie de condicional true or false, nos permite validar si nuestro elemento tiene o no la clase que le estemos preguntando.
 
+const foto = document.createElement('img')
+foto.setAttribute('class', 'parrafo');
+foto.setAttribute('src', 'https://images.pexels.com/photos/19287950/pexels-photo-19287950/free-photo-of-madera-hombre-gente-mujer.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load')
+
+//mid.append(foto); //
+
+console.log(foto.getAttribute('class'));
+
+//Pero como hacemos si queremos eliminar el contenido de mid en HTML y solo dejar la imagen?
+
+mid.innerHTML = ""; //creamos un string vacio para el contenido en el HTML y luego
+mid.appendChild(foto); //agregamos la imagen con el append o appendhild
