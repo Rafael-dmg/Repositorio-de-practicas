@@ -55,22 +55,38 @@
 // mid.innerHTML = ""; //creamos un string vacio para el contenido en el HTML y luego
 // mid.appendChild(foto); //agregamos la imagen con el append o appendhild
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
-let tituloAlternativo = document.querySelector('h1').innerText = 'Ahora el titulo se vera asi';
+// let tituloAlternativo = document.querySelector('h1').innerText = 'Ahora el titulo se vera asi';
 
-const input = document.querySelector('input')
+// const input = document.querySelector('input')
 
-input.classList.add('loco');
+// input.classList.add('loco');
 
-console.log(input.getAttribute('class'));
+// console.log(input.getAttribute('class'));
 
-// claseNueva.setAttribute('placeholder', 'Nuevo placeholder papu')
+// // claseNueva.setAttribute('placeholder', 'Nuevo placeholder papu')
 
-const foto = document.createElement('img')
+// const foto = document.createElement('img')
 
-foto.setAttribute('id', 'imagen');
-foto.setAttribute('src', 'https://images.pexels.com/photos/19287950/pexels-photo-19287950/free-photo-of-madera-hombre-gente-mujer.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load');
+// foto.setAttribute('id', 'imagen');
+// foto.setAttribute('src', 'https://images.pexels.com/photos/19287950/pexels-photo-19287950/free-photo-of-madera-hombre-gente-mujer.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load');
 
-imagen.innerHTML = '';
-imagen.append(foto);
+// imagen.innerHTML = '';
+// imagen.append(foto);
 
+
+// const convert1 = document.querySelector('#input1');
+
+// const convert2 = document.querySelector('#input2');
+
+// let conversion1 = Number(convert1); //Des esta manera se realiza la conercion
+// let conversion2 = Number(convert2);
+
+// console.log(typeof conversion1, conversion2)
+
+let hi = document.querySelector('#nombre')
+
+function saludar() {
+    alert(hi.value);
+}
