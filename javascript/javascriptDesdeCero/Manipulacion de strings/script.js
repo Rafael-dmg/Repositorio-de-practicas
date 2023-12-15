@@ -31,6 +31,17 @@ console.log(saludo.toUpperCase())
 
 const saludoDividido = saludo.split(' ');
 console.log(saludoDividido);
+console.log(saludoDividido[1]);
+
+
+const saludoConEspacios = ' Hola, como estas? ';
+const saludoSinEspacios = saludoConEspacios.trim();
+
+console.log(saludoSinEspacios);
+
+const saludoRepeat = 'Hola, como estas?';
+const saludoReiterado = saludoRepeat.replace('como estas?', 'papu')
+console.log(saludoReiterado)
 
 ////////////////////////////EJERCICIOS CHAT GPT
 
@@ -71,6 +82,8 @@ let min = 'variable';
 let minMay = min.toUpperCase()
 let minMay2 = min.charAt(0).toUpperCase() + min.slice(1);
 
+//tambien puede ser: let minMay2 = min[0].toUpperCase() + min.slice(1);
+
 console.log(minMay)
 console.log(minMay2)
 console.log(min, minMay, minMay2)
@@ -93,3 +106,7 @@ Crea una variable con una frase que contenga al menos una palabra que quieras re
 Almacena esa palabra en una variable.
 Reemplaza esa palabra con otra de tu elección y almacena el resultado en una nueva variable.
 Imprime en la consola la frase original y la frase con la palabra reemplazada.*/
+
+let cualquiera = 'porque si, porque puedo';
+
+//pbs.twimg.com/media/FNQWTjgWQAEFyiT.jpg:large
