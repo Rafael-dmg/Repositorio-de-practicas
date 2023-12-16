@@ -108,5 +108,25 @@ Reemplaza esa palabra con otra de tu elección y almacena el resultado en una nu
 Imprime en la consola la frase original y la frase con la palabra reemplazada.*/
 
 let cualquiera = 'porque si, porque puedo';
+let khe = 'quiero'
+
+let reemplazada = cualquiera.replace('puedo', khe)
+
+console.log(`Muchas cosas en la vida las he hecho con sentido, porque busco algo, o por lograr un objetivo, pero muchas otras son ${cualquiera} y tambien ${reemplazada}`)
+
+
+/* Solucion GPT
+
+let cualquiera = 'porque si, porque puedo';
+let khe = 'quiero';
+
+let palabraReemplazar = 'puedo';
+let reemplazada = cualquiera.replace(palabraReemplazar, khe);
+
+let mensajeOriginal = `Muchas cosas en la vida las he hecho con sentido, porque busco algo, o por lograr un objetivo, pero muchas otras son ${cualquiera} y también`;
+let mensajeReemplazado = `${reemplazada}`;
+
+console.log(mensajeOriginal, mensajeReemplazado);
+*/
 
 //pbs.twimg.com/media/FNQWTjgWQAEFyiT.jpg:large
