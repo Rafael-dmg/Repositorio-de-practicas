@@ -66,7 +66,7 @@ const convert2 = document.querySelector('#input2');
 
 function calcular() {
     let conversion1 = Number(convert1.value); // Corregir la conversión
-    let conversion2 = Number(convert2.value);
+    let conversion2 = Number(convert2.value); // la coercion se realiza dentro de la funcion con la finalidad de que al llamarla, la misma tenga la conversion directamente y no que tenga que traer los datos de una variable externa
     
     //console.log(conversion1 + conversion2); 
     
