@@ -15,7 +15,7 @@ let complementary = 'and';
 
 let completeSentence = hobbies.slice(0, 2).concat(complementary).concat(hobbies.slice(2));
 
-let bio = `Hello and welcome to my blog, my name is ${fullName},
+let bio = `Hello there and welcome to my blog, my name is ${fullName},
 i'm ${age} years old.
 My favorite activities are ${completeSentence.join(' ')}. 
 Follow me to learn some more coding hacks, you can also contact me on ${userName}@tumail.com`
