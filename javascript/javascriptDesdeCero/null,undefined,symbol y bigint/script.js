@@ -32,7 +32,7 @@ console.log(yoMamasSize);
 const particulasEnElUniverso = 13743184134104813084031840813408134081340713084013n;
 console.log(particulasEnElUniverso);
 
-/*]estos  numeros al ser demasiado grandes javasdcript tiene problemas para lidiar con ellos, por ejemplo si ejecutamos los console.log de ambas variables sin haberles escrito la n al final obtendremos: 
+/*estos  numeros al ser demasiado grandes javasdcript tiene problemas para lidiar con ellos, por ejemplo si ejecutamos los console.log de ambas variables sin haberles escrito la n al final obtendremos: 
 - 4.318094183648131e+36
 - 1.3743184134104813e+49
 estos resultados no son los esperamos, porque necesitamos los nuemros enteros que especificamos ene los valores, para esto es necesario el especificarlo con la n al final de dichos numeros lo que activara el bigint:
