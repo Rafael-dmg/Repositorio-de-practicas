@@ -1,0 +1,22 @@
+    .dropdown {
+    visibility: hidden;
+    opacity: 0;
+   }
+   
+   .show {
+    visibility: visible;
+    opacity: 1;
+   }
+   
+   .desktopMenu {
+    border: 1px solid black;
+    width: 100px;
+    position: absolute;
+    left: 98px;
+    border-top: transparent;
+    border-radius: 12px;
+   }
+
+   .inactive {
+    display: none;
+   }
