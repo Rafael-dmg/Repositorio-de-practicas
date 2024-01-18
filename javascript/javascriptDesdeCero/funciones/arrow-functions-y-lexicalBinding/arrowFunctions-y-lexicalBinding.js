@@ -68,11 +68,12 @@ const fictionalCharacterBis = {
         console.log(`${this.nombre}: ${mensaje}`)
     },
     mensajeConArrows: (mensaje) => {
-        console.log(`${fictionalCharacter.name} a ${fictionalCharacter.villano}: ${mensaje}`)
+        console.log(`${fictionalCharacterBis.nombre} a ${fictionalCharacterBis.villano}: ${mensaje}`)
     }
 }
 
-
+fictionalCharacterBis.mensaje('Si Katz es bueno, mi nombre es Paquito...y no lo es')
+fictionalCharacterBis.mensajeConArrows('Suelta a Muriel, sucio gato')
 
 // const fictionalCharacter = {
 //     nombre: 'Coraje',
