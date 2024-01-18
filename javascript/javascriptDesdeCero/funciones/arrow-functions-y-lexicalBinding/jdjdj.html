@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frases Aleatorias</title>
+</head>
+<body>
+
+<h1>Frases Aleatorias</h1>
+
+<p id="fraseDisplay">Presiona el botón para ver una nueva frase.</p>
+<button onclick="mostrarNuevaFrase()">Mostrar Frase</button>
+
+<script>
+  // Define un array con diferentes frases
+  const frases = [
+    "La vida es como una bicicleta, para mantener el equilibrio, debes seguir adelante.",
+    "No importa lo lento que vayas, siempre y cuando no te detengas.",
+    "El único modo de hacer un gran trabajo es amar lo que haces.",
+    "Haz hoy lo que otros no quieren, haz mañana lo que otros no pueden.",
+    "La creatividad es la inteligencia divirtiéndose."
+  ];
+
+  // Función para mostrar una nueva frase al azar
+  function mostrarNuevaFrase() {
+    // Obtén un índice aleatorio del array de frases
+    const indiceAleatorio = Math.floor(Math.random() * frases.length);
+    
+    // Muestra la frase en el elemento con id "fraseDisplay"
+    document.getElementById("fraseDisplay").textContent = frases[indiceAleatorio];
+  }
+</script>
+
+</body>
+</html>
