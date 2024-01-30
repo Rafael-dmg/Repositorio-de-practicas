@@ -18,6 +18,25 @@
     background-color: rgba(2, 34, 4, 0.774);
 }
 
+#logo {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 32px;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+.whiteSpider {
+    max-width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+    min-height: 100px;
+    box-sizing: border-box;
+
+    padding-bottom: 5%;
+}
+
 .spider-btn {
     height: 60px;
     width: 60px;
