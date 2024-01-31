@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .imgNav {
@@ -24,17 +25,18 @@
     background-color: black;
     border-radius: 32px;
     box-sizing: border-box;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
-.whiteSpider {
+.logo img{
     max-width: 100%;
     max-height: 400px;
     min-width: 100px;
     min-height: 100px;
     box-sizing: border-box;
-
-    padding-bottom: 5%;
+    object-fit: cover;
+    
+    /* padding-bottom: 5%; */
 }
 
 .spider-btn {
