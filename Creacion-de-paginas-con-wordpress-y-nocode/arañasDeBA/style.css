@@ -21,13 +21,13 @@
 #logo {
     text-align: center;
     color: white;
-    background-color: black;
-    border-radius: 32px;
+    background-color: rgba(6, 71, 0, 0.329);
+    
     box-sizing: border-box;
     padding: 5%;
 }
 
-.whiteSpider {
+.arañaBlanca {
     max-width: 100%;
     max-height: 400px;
     min-width: 100px;
@@ -36,6 +36,17 @@
 
     padding-bottom: 5%;
 }
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.heroContainer {
+    width: 100%;
+}
+
 
 .spider-btn {
     height: 60px;
