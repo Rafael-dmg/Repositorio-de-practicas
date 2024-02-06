@@ -49,6 +49,14 @@
     width: 100%;
 }
 
+.araña {
+    max-width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+    min-height: 100px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
 
 .spider-btn {
     height: 60px;
@@ -80,4 +88,8 @@
     background-color: green;
     border-radius: 20px;
     width: 40%;
+}
+
+.div2 {
+    object-fit:contain;
 }
