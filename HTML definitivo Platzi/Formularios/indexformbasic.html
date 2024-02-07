@@ -5,7 +5,7 @@
     <meta name="description" content="Creando formularios con Diego De Granda">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index,follow">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./styleformbasic.css">
     <title>Formularios</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section >
             <form action="">
                 <label for="Nombre">
                     <span>Nombre</span>
@@ -38,9 +38,9 @@
         <section>
             <p>Tipos de inputs</p>
 
-        <form action="">
+        <form class="form1" action="">
             <label for="boton">
-                <input type="button" id="boton">
+                <input type="button" value="" id="boton">
                 <span>Boton</span>
             </label>
 
@@ -95,7 +95,23 @@
     </main>
     <footer>
         <section>
-
+<p>
+    otras consideraciones atener en cuenta son:
+    <ul>
+        <li>
+            no anidar anchor tags u otros elementos que puedan causar complicaciones a los usuarios para activar los inputs
+        </li>
+        <li>
+            No anidar headings 
+        </li>
+        <li>
+            Si un formulario o una seccion del formulario necesita un titulo, usa el elemento legend dentro de una etiqueta fieldset.
+        </li>
+        <li>
+            un input de tipo boton con un atributo de value valido, no necesita una label asociada. De hecho puede interferir con las tecnologias de asistencia. Lo mismo aplica para los elementos de boton
+        </li>
+    </ul>
+</p>
         </section>
     </footer>
 </body>
