@@ -1,9 +1,85 @@
-<<<<<<< HEAD
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(218, 5, 5, 0.719);
+    padding: 12px 12px;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    padding-bottom: 16px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;background-color: rgba(255, 255, 0, 0.541);
+}
+
+.main-section__frutas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    color: white;
+    background-color: rgba(28, 0, 128, 0.637);
+}
+
+.main-section__frutas>ol {
+    list-style: none;
+}
+
+.main-section__frutas>ol>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.main-section__carnes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    color: white;
+    background-color: rgba(139, 0, 0, 0.897);
+}
+
+.main-section__verduras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    color: white;
+
+    background-color: rgba(0, 128, 0, 0.637);
+}
+
+.main-section__carnes>ol {
+    list-style: none;
+}
+
+.main-section__carnes>ol>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.main-section__verduras>ol {
+    list-style: none;
+}
+
+.main-section__verduras>ol>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
 
 figure > img {
     height: 150px;
@@ -19,25 +95,3 @@ figure #pineapple {
     height: 200px;
     width: 150px;
 }
-=======
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-}
-
-figure > img {
-    height: 150px;
-    width: 150px;
-}
-
-figure #banana {
-    height: 100px;
-    width: 200px;
-}
-
-figure #pineapple {
-    height: 200px;
-    width: 150px;
-}
->>>>>>> 569db8b305f7f392934abeb5347607de424bd206
