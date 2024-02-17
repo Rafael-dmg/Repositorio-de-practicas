@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
+
 .imgNav {
     height: 60px;
     width: 60px;
@@ -28,7 +32,7 @@
     /* padding: 5%; */
 }
 
-.whiteSpider {
+.arañaBlanca {
     max-width: 100%;
     max-height: 400px;
     min-width: 100px;
