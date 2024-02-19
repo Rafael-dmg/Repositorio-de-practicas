@@ -11,7 +11,7 @@ arañaBlanca.setAttribute('class', 'arañaBlanca')
 
 
 const arañaLobo = document.createElement('img')
-arañaLobo.setAttribute('src','../assets/arañaLobo.png')
+arañaLobo.setAttribute('src','assets/arañaLobo.png')
 
 imageContainer.appendChild(arañaLobo)
 
