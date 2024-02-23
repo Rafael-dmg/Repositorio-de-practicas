@@ -1,0 +1,15 @@
+div p {
+    color: red;
+}
+
+div > p {
+    color: blue;
+}
+
+div article:nth-child(2) p {
+    color: aqua;
+}
+
+.table p {
+    color: black;
+}
