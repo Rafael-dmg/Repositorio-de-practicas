@@ -13,3 +13,7 @@ div article:nth-child(2) p {
 .table p {
     color: black;
 }
+
+.table p:nth-child(3) {
+    color: red;
+}
