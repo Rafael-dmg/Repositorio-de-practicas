@@ -1,0 +1,30 @@
+/* esto es un adjacent sibling estos afectan a todos los elementos que esten
+ al lado del selector que escribimos antes del +
+En este ejemplo esta afectando a todas las etiquetas
+ p que esten junto de 
+las etiquetas h2 */
+
+h2 + h3 {
+    color: blue;
+}
+
+h2:first-of-type + h2 {
+    color: red;
+}
+
+
+/* h2 + p {
+    color: red;
+} este es un adjacent sibling */
+
+h2 ~ p {
+    color: red;
+}/* esto es un general sibling esto afecta a todos los elementos hermanos que esten
+ dentro del mismo contenedor del selector que escribimos antes del ~
+En este ejemplo esta afectando a todas las etiquetas
+ p que esten dentro del mismo contenedor junto a las etiquetas h2*/
+
+
+/* div :nth-child(3) {
+    color: red;
+}  */ 
