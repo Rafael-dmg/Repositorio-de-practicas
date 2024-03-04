@@ -150,3 +150,11 @@ footer div p {
     font-size: 2rem;
     color: grey;
 }
+
+@media (max-width: 760px) {
+    ul {
+        display: none;
+    }
+
+    
+}
