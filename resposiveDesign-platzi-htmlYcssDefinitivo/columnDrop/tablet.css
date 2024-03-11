@@ -1,0 +1,21 @@
+.sec1 {
+    width: 25%;
+    order: 1;
+    overflow: scroll;
+    max-height: 300px;
+}
+
+.sec6 {
+    order: 2;
+    width: 75%;
+}
+
+.sec2 {
+    width: 100%;
+    order: 4;
+}
+
+.sec5 {
+    order: 5;
+    min-height: 300px;
+}
