@@ -30,7 +30,7 @@
     background-color: blue;
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 35%;
 }
 
 .main__item:last-of-type {
@@ -61,4 +61,3 @@ img {
     height: 100%;
     width: 100%;
 }
-
