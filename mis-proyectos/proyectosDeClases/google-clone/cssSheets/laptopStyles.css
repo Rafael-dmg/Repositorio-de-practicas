@@ -37,8 +37,8 @@ a {
 
 .navbar__subsectionLeft {
     display: flex;
-    gap: 10px;
-    justify-content: space-around;
+    gap: 15px;
+    justify-content: end;
     align-items: center;
     padding: 10px;
     height: auto;
@@ -49,9 +49,10 @@ a {
 }
 
 .navbar__subsectionRight {
-    display: flex;  
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: start;  
     align-items: center;
+    gap: 10px;
     padding: 10px;
     height: auto;
     width: 100%;
@@ -71,3 +72,6 @@ a {
     max-width: 80px;
     border-radius: 100px;
 }
+
+
+/* agregar un margin de 10px en mobile */
