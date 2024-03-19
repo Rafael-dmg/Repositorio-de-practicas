@@ -142,7 +142,8 @@ main {
     border: none;
     overflow: hidden;
     text-overflow: ellipsis;
-    
+    outline: none;
+    font-size: 1.6rem;
 }
 
 /* agregar un margin de 10px en mobile */
