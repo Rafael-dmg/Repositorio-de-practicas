@@ -20,6 +20,6 @@ int main () {
     P ("ingresa el lado: ");
     S ("%d",&lado);
     cuadrado=lado*lado;
-    printf("El area del cuadrado es: " "%d",cuadrado);
+    printf("El area del cuadrado es: ""\n" "%d\n",cuadrado);
     return 0;
 }
