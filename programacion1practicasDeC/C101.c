@@ -28,3 +28,14 @@ int main() {
     return 0; // Es recomendable retornar un valor
 }
 
+<<<<<<< HEAD:output/C101.c
+=======
+int main () {
+    int lado, cuadrado;
+    P ("ingresa el lado: ");
+    S ("%d",&lado);
+    cuadrado=lado*lado;
+    printf("El area del cuadrado es: ""\n" "%d\n",cuadrado);
+    return 0;
+}
+>>>>>>> 6b642ff8b6081014c0be7ebd6001106dbc7b797b:programacion1practicasDeC/C101.c
