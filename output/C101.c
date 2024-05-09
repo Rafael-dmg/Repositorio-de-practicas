@@ -12,14 +12,19 @@
 // }
 
 #include <stdio.h>
-#define P printf
-#define S scanf
+#define P printf;
+#define S scanf;
 
-int main () {
-    int lado, cuadrado;
-    P ("ingresa el lado: ");
-    S ("%d",&lado);
-    cuadrado=lado*lado;
-    printf("El area del cuadrado es: " "%d",cuadrado);
-    return 0;
+#include <stdio.h>
+
+int main() {
+    int numero = 123;
+    int cifraCentral;
+
+    cifraCentral = (numero / 10) % 10; // El cálculo se ajustó para obtener la cifra central correcta
+
+    printf("La cifra central de %d es %d\n", numero, cifraCentral);
+    
+    return 0; // Es recomendable retornar un valor
 }
+
