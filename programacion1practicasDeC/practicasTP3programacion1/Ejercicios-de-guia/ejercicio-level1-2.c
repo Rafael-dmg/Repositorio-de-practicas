@@ -4,4 +4,3 @@ primeras. Si paga 2 podra acceder a las 2 primeras y si paga 1 solo a la primera
 los creditos y mostrar a que juegos puede acceder. */
 
 #include <stdio.h>
-
