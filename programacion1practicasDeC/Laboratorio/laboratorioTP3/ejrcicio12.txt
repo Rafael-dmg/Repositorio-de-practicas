@@ -1,0 +1,22 @@
+//alt + 27 = ←
+
+TP3 ejercicio12
+
+valorEntero, a, b ,c: N
+
+Comienzo
+  Escribir "Ingrese un numero de 3 cifras"
+  Leer valorEntero
+
+  a ← valorEntero trunc (valorEntero/10)
+  b ← valorEntero trunc (valorEntero/10) mod 10
+  c ← valorEntero mod 10
+
+
+  Si valorEntero < 100  Entonces 
+                            Escribir "ingrese un valor de 3 cifras"
+
+        sino
+          Escribir "El valor dado fue: ", valorEntero
+          Escribir "el valor invertido es: ", c,b,a
+  Finsi

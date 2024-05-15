@@ -12,7 +12,7 @@ float b=13.546;
 char c='A'; 
 char d='a';
 
-    printf ("d vale %x", d);
+    printf ("d vale %c", d);
 
     return 0;
 }
