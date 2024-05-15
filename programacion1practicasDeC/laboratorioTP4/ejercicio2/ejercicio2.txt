@@ -1,0 +1,59 @@
+Una empresa que transporta encomiendas, calcula el costo de cada una de ellas en base al tipo
+y destino de la misma. Partiendo de un basico de $300, los recargosque se aplican,
+ son los siguientes:
+
+ Segun el tipo   | Recargo                                Segun el destino   |   Recargo
+ S(Simple)       | 0%                                     L(Local)           |   5%
+ X(Expreso)      | 20%                                    N(Exterior)        |   20%
+ E(Especial)     | 40%
+Diseñar un algoritmo que solicite el tipo y destino de la encomienda y devuelva el costo
+
+TP4 Ejercicio 2
+
+
+valorFinal, basico, valorDestino, valorTipo: R
+tipo, destino: C[2]
+
+comienzo
+
+basico ← 300
+
+Escribir "Ingrese un tipo de envio"
+Leer tipo
+
+    Si (tipo == 'S' || tipo == 'X' || tipo == 'E') Entonces
+        Escribir "Ingrese un tipo de encomienda valido"
+    FinSi
+
+Escribir "Ingrese un destino"
+Leer destino
+
+    Si (destino == 'L' || destino == 'N')Entonces
+        Escribir "Ingrese un destino valido"
+    FinSi
+
+
+Segun (tipo) Hacer
+
+    'S': 
+        valorTipo ← 0.00
+    'X':
+        valorTipo ← 0.20
+    'E':
+        valorTipo ← 0.40
+
+FIn Segun
+
+Segun (destino) Hacer
+
+    'L':
+        valorDestino ← 0.05
+    'N':
+        valorDestino ← 0.20
+
+Fin Segun
+
+valorFinal ← basico + (basico * valorTipo) + (basico * valorDestino)
+
+Escribir "Elvalor total de envio es: ", valorFinal
+

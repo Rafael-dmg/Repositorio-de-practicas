@@ -6,14 +6,16 @@ float lado, perimetro, base, altura, area, radio;
 int main ()
 {
     printf("Ingrese un numero para elegir la forma geometrica\n");
+    printf("1.- Cuadrado\n");
+    printf("2.- Rectangulo\n");
+    printf("3.- Circulo\n");
     scanf("%d", &eleccion);
+
+    if (eleccion < 1 || eleccion > 3)
+        printf("Elija un numero dentro del rango\n");
 
     switch(eleccion) 
     {
-        case 0:
-            printf("Ingresa una opcion valida");
-            break;
-
         case 1:
            printf("Elegiste cuadrado\n");
             printf("Ingresa el lado de un cuadrado para saber su area y su perimetro\n");
