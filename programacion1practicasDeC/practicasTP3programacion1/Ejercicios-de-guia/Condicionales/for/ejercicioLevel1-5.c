@@ -5,6 +5,8 @@ int num, mayor, menor, flag=0;
 
 int main()
 {
+    /*si el usuario ingrsa un 0 el programa corta y solo muestra, 
+    el mayor y el menor valor*/
    do
     {
         printf("ingrese un numero (Cero para salir)");
