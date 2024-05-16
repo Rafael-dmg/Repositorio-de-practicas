@@ -29,11 +29,13 @@ int main ()
         else if (irOquedarse == 'n')
             printf("Sera para la proxima, adios\n");
     }
-    else if (creditos < 1 || creditos > 4)
-        printf("Ingresa un valor correcto de creditos\n");    
 
-    else if (creditos > 1 || creditos < 4) 
-    {
+         printf("Cuantos Creditos vas a comprar hoy?:  ");
+        scanf("%d", &creditos);
+
+     if (creditos < 1){
+        printf("Ingresa un valor correcto de creditos\n");    
+    }
         switch (creditos)
         {
             case 1: 
@@ -51,9 +53,12 @@ int main ()
             case 4:
                 printf("Excelente! puedes acceder a la experiencia completa de Consolas, Juegos 2D, Juegos 3D y Realidad virtual!\n");
                 break;
+
+                default: 
+                    printf("Excelente! puedes acceder a la experiencia completa de Consolas, Juegos 2D, Juegos 3D y Realidad virtual!\n");
                 
         }
+
+        return 0;
     }    
 
-    return 0; 
-}
