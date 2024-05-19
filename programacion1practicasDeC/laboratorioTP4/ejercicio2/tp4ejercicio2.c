@@ -29,31 +29,28 @@
 #include <stdio.h>
 
 int main() {
-  // Declaración de variables
+ 
   char tipoEncomienda, destinoEncomienda;
   float costoBase = 300.00, recargoTipo, recargoDestino, costoTotal;
 
-  // Solicitar tipo de encomienda
+  
   printf("Ingrese el tipo de encomienda (S/X/E): ");
   scanf(" %c", &tipoEncomienda);
 
-  // Validar tipo de encomienda ingresado
-  if (tipoEncomienda == 'S' || tipoEncomienda == 'X' || tipoEncomienda == 'E') {
+
+  if (tipoEncomienda == 'S' && tipoEncomienda == 'X' && tipoEncomienda == 'E') {
     printf("Tipo de encomienda no válido. Ingrese S, X o E.\n");
-    return 1; // Indicar error
   }
 
-  // Solicitar destino de la encomienda
+
   printf("Ingrese el destino de la encomienda (L/N): ");
   scanf(" %c", &destinoEncomienda);
 
-  // Validar destino de encomienda ingresado
-  if (destinoEncomienda == 'L' || destinoEncomienda == 'N') {
+
+  if ((destinoEncomienda == 'L' && destinoEncomienda == 'l') && (destinoEncomienda == 'N' && destinoEncomienda =='n')) {
     printf("Destino de encomienda no válido. Ingrese L o N.\n");
-    return 1; // Indicar error
   }
 
-  // Calcular recargo por tipo de encomienda
   switch (tipoEncomienda) {
     case 'S':
       recargoTipo = 0.00;
@@ -66,7 +63,7 @@ int main() {
       break;
   }
 
-  // Calcular recargo por destino de encomienda
+
   switch (destinoEncomienda) {
     case 'L':
       recargoDestino = 0.05;
@@ -76,10 +73,9 @@ int main() {
       break;
   }
 
-  // Calcular costo total
+
   costoTotal = costoBase + (costoBase * recargoTipo) + (costoBase * recargoDestino);
 
-  // Mostrar el costo total
   printf("El costo total de la encomienda es: $%.2f\n", costoTotal);
 
   return 0;
