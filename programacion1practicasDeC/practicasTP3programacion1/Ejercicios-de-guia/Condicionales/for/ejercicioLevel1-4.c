@@ -1,3 +1,6 @@
+/*Imprimir una tabla de multiplicar para un numero ingresado por el usuario  
+(1*n, 2*n, 3*n...hasta llegar al mismo numero ingresado por el usuario n*n)*/
+
 #include <stdio.h>
 
 int n, valor, base;
