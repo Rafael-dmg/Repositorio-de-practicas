@@ -1,0 +1,98 @@
+//Se ingresa una fecha con el formato día, mes, año (dos dígitos c/u), realizar un programa que
+devuelva la fecha ingresada con un nuevo formato. Por ejemplo si se ingresa 31 07 17, el programa
+debe devolver 31 de julio de 2017.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Armmado
+
+dia mes año: N
+
+ingresa dato por dato, todo junto y se elije por trunc y mod?
+hay que verificar si el año es biciesto?
+//////////////////
+    Si (año mod 4 == 0) Entonces
+               Si (año mod 100 == 0) Entonces
+                   Si (año mod 400 == 0) Entonces
+                      año == 1
+                     Sino
+                      año == 0
+                    FinSi
+                 Sino
+                      año == 1
+                FinSi
+              Sino
+                      año == 0
+            FinSi
+
+            Si(año == 1) Entonces
+                Escribir "Febrero"
+              Sino 
+                Escribir "El mes ingresado no es valido"
+
+///////////
+
+dia ← imprimir valor ingresado por el usuario (validar que sea un numero del 1 al 31 y si el mes corresponde a 31 o 30)
+mes ← se usa un Segun para verificar que valor tiene y en base a eso imprimir el mes correspondiente **usar codigo 
+existente de tp's anteriores** (verificar que el numero sea del 1 al 12)
+año ← imprimir el valor ingresado por el usuario (validar que sea un año real o dentro de los valores creibles)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+TpGrupal Ejercicio 2
+
+dia, mes, año, biciesto: N
+
+    Escribir "Ingrese el día (dos dígitos): "
+    Leer dia
+    Escribir "Ingrese el mes (dos dígitos): "
+    Leer mes
+    Escribir "Ingrese el año (dos dígitos): "
+    Leer año
+
+    Si (dia < 1 O dia > 31)
+        Escribir "Ingrese un formato de dia valido"
+    FinSi
+
+    Si (mes > 12 O mes < 1)
+        Escribir "Ingrese un formato entre el 1 y el 12"
+    FinSi
+
+    Si (año > 25) Entonces
+          año = año + 1900
+        sino
+          año = año + 2000
+    FinSi
+    
+
+    Segun mes hacer
+        1:
+            mes = 'Enero'
+        2:
+            mes = 'Febrero'
+        3:
+            mes = 'Marzo'
+        4:
+            mes = 'Abril'
+        5:
+            mes = 'Mayo'
+        6:
+            mes = 'Junio'
+        7:
+            mes = 'Julio'
+        8:
+            mes = 'Agosto'
+        9:
+            mes = 'Septiembre'
+        10:
+            mes = 'Octubre'
+        11:
+            mes = 'Noviembre'
+
+        En cualquier otro caso:
+            mes = 'Diciembre'
+    Fin Segun
+
+
+    Escribir "La fecha indicada es: ", dia, mes, año
