@@ -24,8 +24,8 @@ int main ()
             if (lado > 0) {
                 area = lado * lado;
                 perimetro = area *2;
-                printf("Area: %.1f\n", area);
-                printf("Perimetro: %.1f\n", perimetro);
+                printf("Area: %.2f\n", area);
+                printf("Perimetro: %.2f\n", perimetro);
             }   
                 else
                     printf("Ingrese un numero mayor a 0\n");
@@ -40,11 +40,15 @@ int main ()
             scanf("%f", &altura);
 
 
-            //falta comprobacion de valores mayores a 0 - ya que si valen 0 la forma cambia basicamente no?
-            area = base * altura;
-            perimetro = 2 * (base + altura);
-            printf("Area: %.2f\n", area);
-            printf("Perimetro: %.2f\n", perimetro);
+            if (base > 0 && altura > 0)
+            {
+                area = base * altura;
+                perimetro = 2 * (base + altura);
+                printf("Area: %.2f\n", area);
+                printf("Perimetro: %.2f\n", perimetro);
+            }  else 
+                printf("Ingrese valores mayores a 0\n");
+            
             break;
 
         case 3:
@@ -53,12 +57,15 @@ int main ()
             printf("Ingrese el radio del circulo\n");
             scanf("%f", &radio);
 
-            //falta comprobacion de valores mayores a 0 - ya que si valen 0 la forma cambia basicamente no?
-
-            area = 3.14 * (radio * radio);
-            perimetro = (3.14 * 2) * radio;
-            printf("Area: %.2f\n", area);
-            printf("Perimetro: %.2f\n", perimetro);
+                 if (radio > 0)
+            {
+                area = 3.14 * (radio * radio);
+                perimetro = (3.14 * 2) * radio;
+                printf("Area: %.2f\n", area);
+                printf("Perimetro: %.2f\n", perimetro);
+            }  else 
+                printf("Ingrese valores mayores a 0\n");
+          
             break;
     }
 }

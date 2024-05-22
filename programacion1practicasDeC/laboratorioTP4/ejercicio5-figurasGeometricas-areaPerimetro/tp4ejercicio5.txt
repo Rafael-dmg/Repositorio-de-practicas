@@ -85,7 +85,7 @@ area, perimetro, base, altura, lado, radio, diagonalMayor, diagonalMenor: R
             Leer radio
 
 
-             Si (base > 0 Y altura > 0) Entonces
+             Si (radio > 0) Entonces
                 area = 3.14 * (radio * radio)
                 perimetro = (3.14 * 2) * radio
 
@@ -123,8 +123,8 @@ area, perimetro, base, altura, lado, radio, diagonalMayor, diagonalMenor: R
             Escribir "Ingrese Diagonal Menor del rombo: "
             Leer diagonalMenor
 
-            Si (base > 0 Y altura > 0) Entonces
-                area = (Diagonal mayor x Diagonal menor) / 2
+            Si (diagonalMayor > 0 Y diagonalMenor > 0) Entonces
+                area = (diagonalMenor * diagonalMenor) / 2
 
                 Escribir "Ingrese un lado del rombo para calcular su perimetro"
                 Leer lado
