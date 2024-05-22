@@ -42,6 +42,7 @@ año ← imprimir el valor ingresado por el usuario (validar que sea un año rea
 
 TpGrupal Ejercicio 2
 
+Comienzo
 dia, mes, año, biciesto: N
 
     Escribir "Ingrese el día (dos dígitos): "
@@ -59,7 +60,7 @@ dia, mes, año, biciesto: N
         Escribir "Ingrese un formato entre el 1 y el 12"
     FinSi
 
-    Si (año > 25) Entonces
+    Si (año >= 25) Entonces
           año = año + 1900
         sino
           año = año + 2000
@@ -67,32 +68,91 @@ dia, mes, año, biciesto: N
     
 
     Segun mes hacer
-        1:
-            mes = 'Enero'
-        2:
-            mes = 'Febrero'
-        3:
-            mes = 'Marzo'
-        4:
-            mes = 'Abril'
-        5:
-            mes = 'Mayo'
-        6:
-            mes = 'Junio'
-        7:
-            mes = 'Julio'
-        8:
-            mes = 'Agosto'
-        9:
-            mes = 'Septiembre'
+        01:
+            Si (dia <= 31  ) Entonces
+                mes = 'Enero'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
+        02:
+              Si (año mod 4 == 0) Entonces
+               Si (año mod 100 == 0) Entonces
+                   Si (año mod 400 == 0) Entonces
+                      año == 1
+                     Sino
+                      año == 0
+                    FinSi
+                 Sino
+                      año == 1
+                FinSi
+              Sino
+                      año == 0
+            FinSi
+
+            Si(año == 1 && dia <= 29) Entonces
+                Escribir "Febrero"
+              Sino 
+                Escribir "El mes ingresado no es valido"
+
+        03:
+            Si (dia <= 31) Entonces
+                mes = 'Marzo'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
+        
+        04:
+           Si (dia <= 30  ) Entonces
+                mes = 'Abril'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
+        05:
+           Si (dia <= 31) Entonces
+                mes = 'Mayo'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
+        
+        06:
+            Si (dia <= 30  ) Entonces
+                mes = 'Junio'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
+        
+        07:
+            Si (dia <= 31) Entonces
+                mes = 'Julio'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
+        08:
+            Si (dia <= 31) Entonces
+                mes = 'Agosto'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
+       
+        09:
+            Si (dia <= 30  ) Entonces
+                mes = 'Septiembre'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
+        
         10:
-            mes = 'Octubre'
+            Si (dia <= 31) Entonces
+                mes = 'Octubre'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
+        
         11:
-            mes = 'Noviembre'
+            Si (dia <= 30  ) Entonces
+                mes = 'Noviembre'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
 
         En cualquier otro caso:
-            mes = 'Diciembre'
+            Si (dia <= 31) Entonces
+                mes = 'Diciembre'
+            sino 
+                Escribir "No coincide fecha del dia con el mes"
     Fin Segun
 
 
     Escribir "La fecha indicada es: ", dia, mes, año
+
+Fin

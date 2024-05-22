@@ -1,0 +1,22 @@
+Realizar un programa que permita elegir al usuario el cálculo del perímetro y/o area de por lo
+menos 5 figuras geométricas.
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Armado
+
+Figuras: triangulo, circulo, rectangulo, cuadrado, cilindro.
+
+formulas:
+
+cilindro:
+
+triangulo:
+
+circulo: 
+    area = pi * r 
+    perimetro = (pi*2) + r
+
+cuadrado:
+    area: lado * lado
+    perimetro: 4 (cantidad de lados) * lado
