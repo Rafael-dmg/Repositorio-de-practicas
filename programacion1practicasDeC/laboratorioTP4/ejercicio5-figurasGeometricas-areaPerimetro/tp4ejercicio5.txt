@@ -26,3 +26,41 @@ cuadrado:
     perimetro: 4 (cantidad de lados) * lado
 
 ///////////////////////////////////////////////////////////////////////
+
+Tp4 ejercicio5
+
+Comienzo
+
+eleccion, cuadrado, rectangulo, circulo, triangulo, rombo: N
+area, perimetro, base, altura, lado, radio, diagonalMayor, diagonalMenor: R
+
+    Escribir"Ingrese un numero para elegir la forma geometrica a calcular"
+    Escribir"1.- Cuadrado"
+    Escribir"2.- Rectangulo"
+    Escribir"3.- Circulo"
+    Escribir"4.-Triangulo"
+    Escribir"5.- Rombo"
+    Leer eleccion
+
+    Si (eleccion <1 O eleccion > 5) Entonces
+        Escribir"Ingrese un valor dentro del rango"
+    Fin Si
+
+    Segun eleccion Hacer
+        1:
+            Escribir""
+
+        2:
+
+
+        3:
+
+
+        4:
+
+
+        5:
+
+    
+
+Fin
