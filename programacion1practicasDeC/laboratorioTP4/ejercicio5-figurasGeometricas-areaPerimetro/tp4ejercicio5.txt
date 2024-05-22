@@ -9,14 +9,20 @@ Figuras: triangulo, circulo, rectangulo, cuadrado, cilindro.
 
 formulas:
 
-cilindro:
+rombo: 
+    Área: (Diagonal mayor x Diagonal menor) / 2
+    Perímetro: 4 * Lado
 
 triangulo:
+    Área: Base (b) x Altura (h) / 2
+    Perímetro: Suma de las longitudes de los tres lados (a, b, c)
 
 circulo: 
-    area = pi * r 
-    perimetro = (pi*2) + r
+    area = π * r 
+    perimetro = (π*2) + r
 
 cuadrado:
     area: lado * lado
     perimetro: 4 (cantidad de lados) * lado
+
+///////////////////////////////////////////////////////////////////////
