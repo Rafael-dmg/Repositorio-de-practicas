@@ -34,12 +34,12 @@ Comienzo
 eleccion, cuadrado, rectangulo, circulo, triangulo, rombo: N
 area, perimetro, base, altura, lado, radio, diagonalMayor, diagonalMenor: R
 
-    Escribir"Ingrese un numero para elegir la forma geometrica a calcular"
-    Escribir"1.- Cuadrado"
-    Escribir"2.- Rectangulo"
-    Escribir"3.- Circulo"
-    Escribir"4.-Triangulo"
-    Escribir"5.- Rombo"
+    Escribir "Ingrese un numero para elegir la forma geometrica a calcular"
+    Escribir "1.- Cuadrado"
+    Escribir "2.- Rectangulo"
+    Escribir "3.- Circulo"
+    Escribir "4.-Triangulo"
+    Escribir "5.- Rombo"
     Leer eleccion
 
     Si (eleccion <1 O eleccion > 5) Entonces
@@ -48,19 +48,92 @@ area, perimetro, base, altura, lado, radio, diagonalMayor, diagonalMenor: R
 
     Segun eleccion Hacer
         1:
-            Escribir""
+            Escribir"Elegiste: Cuadrado"
+            Escribir"Ingrese el lado de un cuadrado para saber su area y su perimetro"
+            Leer lado
+
+                Si (lado > 0) Entonces
+                    area = lado * lado
+                    perimetro = area *2
+                    Escribir "Area: ", area
+                    Escribir "Perimetro: ", perimetro
+                  sino
+                    Escribir "Ingrese un numero mayor a 0"
+                Fin Si
 
         2:
+            Escribir "Elegiste: Rectangulo"
+            Escribir "Ingrese los valores para calcular area y perimetro"
+            Escribir "Ingrese la base del rectangulo: "
+            Leer base
+            Escribir "Ingrese la altura del rectangulo: "
+            Leer altura
 
+            Si (base > 0 Y altura > 0) Entonces
+                area = base * altura
+                perimetro = 2 * (base + altura)
+                Escribir "Area: ", area
+                Escribir "Perimetro: ", perimetro
+              sino
+                    Escribir "Ingrese valores mayores a 0"
+            Fin Si
 
         3:
+            Escribir "Elegiste: Circulo"
+            Escribir "Ingrese los valores para calcular area y perimetro"
+            Escribir "Ingrese el radio del circulo"
+            Leer radio
 
 
+             Si (base > 0 Y altura > 0) Entonces
+                area = 3.14 * (radio * radio)
+                perimetro = (3.14 * 2) * radio
+
+                Escribir "Area: ", area
+                Escribir "Perimetro: ", perimetro
+              sino
+                    Escribir "Ingrese valores mayores a 0"
+            Fin Si
+
+            
         4:
+            Escribir"Elegiste: Triangulo"
+            Escribir "Ingrese los valores para calcular area y perimetro"
+            Escribir "Ingrese la base del triangulo: "
+            Leer base
+            Escribir "Ingrese la altura del triangulo: "
+            Leer altura
+
+             Si (base > 0 Y altura > 0) Entonces
+                area = (base * altura) / 2
+                perimetro = base * 3
+
+                Escribir "Area: ", area
+                Escribir "Perimetro: ", perimetro
+              sino
+                    Escribir "Ingrese valores mayores a 0"
+            Fin Si
 
 
         5:
+            Escribir"Elegiste: Rombo"
+            Escribir "Ingrese los valores para calcular area y perimetro"
+            Escribir "Ingrese Diagonal Mayor del rombo: "
+            Leer diagonalMayor
+            Escribir "Ingrese Diagonal Menor del rombo: "
+            Leer diagonalMenor
 
-    
+            Si (base > 0 Y altura > 0) Entonces
+                area = (Diagonal mayor x Diagonal menor) / 2
+
+                Escribir "Ingrese un lado del rombo para calcular su perimetro"
+                Leer lado
+                perimetro = 4 * lado
+
+                Escribir "Area: ", area
+                Escribir "Perimetro: ", perimetro
+              sino
+                    Escribir "Ingrese valores mayores a 0"
+            Fin Si
 
 Fin

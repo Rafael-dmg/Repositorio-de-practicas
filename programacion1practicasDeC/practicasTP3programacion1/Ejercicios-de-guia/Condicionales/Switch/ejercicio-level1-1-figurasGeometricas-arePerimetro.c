@@ -39,6 +39,8 @@ int main ()
             printf("Ingrese la altura del rectangulo: \n");
             scanf("%f", &altura);
 
+
+            //falta comprobacion de valores mayores a 0 - ya que si valen 0 la forma cambia basicamente no?
             area = base * altura;
             perimetro = 2 * (base + altura);
             printf("Area: %.2f\n", area);
@@ -50,6 +52,8 @@ int main ()
             printf("Ingresar los valores para calcular area y perimetro\n");
             printf("Ingrese el radio del circulo\n");
             scanf("%f", &radio);
+
+            //falta comprobacion de valores mayores a 0 - ya que si valen 0 la forma cambia basicamente no?
 
             area = 3.14 * (radio * radio);
             perimetro = (3.14 * 2) * radio;
