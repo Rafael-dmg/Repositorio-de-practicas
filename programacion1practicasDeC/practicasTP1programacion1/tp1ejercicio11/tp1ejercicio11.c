@@ -1,3 +1,7 @@
+/*11. Desarrolla un algoritmo que permita leer 2 valores y emitir por pantalla 
+la suma de los dos, la resta, producto, división, promedio y 
+el doble producto del primero menos la mitad del segundo.   */
+
 #include <stdio.h>
 
 int main()
