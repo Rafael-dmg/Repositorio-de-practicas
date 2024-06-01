@@ -1,7 +1,0 @@
-Ejercicio 1: Revertir un subconjunto de un array
-Escribe una función que tome un array, un índice de inicio y un índice de final como argumentos. Esta función debería revertir el orden de los elementos en el array desde el índice de inicio hasta el índice de final (inclusive). Devuelve el array modificado.
-
-Ejercicio 2: Filtrar por tipo de datos
-Crea una función que tome un array mixto (con diferentes tipos de datos: números, strings, booleanos, etc.) como argumento y un tipo específico (por ejemplo, 'number', 'string', 'boolean'). La función debería devolver un nuevo array que contenga solo los elementos del tipo específico indicado.
-
-Estos ejercicios son excelentes para practicar el acceso a los elementos del array, manipulación y la creación de nuevas funcionalidades en JavaScript. Cuando estés listo para verificar tus respuestas o necesites orientación adicional, no dudes en preguntar.
