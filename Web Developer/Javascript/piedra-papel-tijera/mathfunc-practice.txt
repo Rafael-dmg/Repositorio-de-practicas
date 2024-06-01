@@ -1,0 +1,25 @@
+const piedra = 'piedra';
+const papel = 'papel';
+const tijera = 'tijera';
+
+function jugadapc() {
+    const cpu = Math.floor(Math.random() * 3)
+        if (cpu === 1) {
+            pc = piedra
+            console.log('piedra')
+    } else if (cpu === 2) {
+            pc = papel
+            console.log('papel')
+    } else {
+        pc = tijera
+        console.log('tijera')
+    }
+}
+
+con esta formula podemos generar la seleccion de la pc de manera aleatoria.
+
+Math.floor() nos redondea el numero haciendo posible que tengamos un numero entero del 1 al 3
+Math.random() nos genera el numero aleatorio y con el '* 3' le damos un rango de calculo o limite
+
+Math.random() va adentro de math.floor() porque ahi es de donde floor, va a tomar el numero que debe redondear
+

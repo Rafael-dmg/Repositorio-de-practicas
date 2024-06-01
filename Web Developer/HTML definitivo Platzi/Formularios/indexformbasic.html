@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Creando formularios con Diego De Granda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="./styleformbasic.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+        </nav>
+    </header>
+    <main>
+        <section >
+            <form action="">
+                <label for="Nombre">
+                    <span>Nombre</span>
+                    <input type="text" id="Nombre" placeholder="ejemplo: Tu nombre">
+                </label>
+
+                <label for="">
+                    <span>Email</span>
+                    <input type="email" id="Email" placeholder="ejemplo: email@mail.com">
+                </label>
+
+                <label for="nacimiento">
+                    <span>¿Cuando naciste?</span>
+                    <input type="date" id="nacimiento">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+
+        <section>
+            <p>Tipos de inputs</p>
+
+        <form class="form1" action="">
+            <label for="boton">
+                <input type="button" value="" id="boton">
+                <span>Boton</span>
+            </label>
+
+            <label for="checkbox">  
+                <input type="checkbox" id="checkbox">
+                <span>Checkbox</span>
+            </label>
+
+            <label for="">
+                <input type="color">
+                <span>Color</span>
+            </label>
+
+            <label for="">
+                <input type="date">
+                <span>Fecha</span>
+            </label>
+
+            <label for="">
+                <input type="datetime-local">
+                <span></span>
+            </label>
+
+            <label for="">
+                <input type="email">
+                <span></span>
+            </label>
+
+        </form>
+
+          
+            <input type="file">
+            <input type="hidden">
+            <input type="image">
+            <input type="month">
+            <input type="number">
+            <input type="password">
+            <input type="radio">
+            <input type="range">
+            <input type="reset">
+            <input type="search">
+            <input type="tel">
+            <input type="text">
+            <input type="time">
+            <input type="url">
+            <input type="week">
+            <input type="submit">
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <footer>
+        <section>
+<p>
+    otras consideraciones atener en cuenta son:
+    <ul>
+        <li>
+            no anidar anchor tags u otros elementos que puedan causar complicaciones a los usuarios para activar los inputs
+        </li>
+        <li>
+            No anidar headings 
+        </li>
+        <li>
+            Si un formulario o una seccion del formulario necesita un titulo, usa el elemento legend dentro de una etiqueta fieldset.
+        </li>
+        <li>
+            un input de tipo boton con un atributo de value valido, no necesita una label asociada. De hecho puede interferir con las tecnologias de asistencia. Lo mismo aplica para los elementos de boton
+        </li>
+    </ul>
+</p>
+
+<form>
+    <fieldset>
+      <legend>Información Personal</legend>
+      <label for="nombre">Nombre:</label>
+      <input name="nombre" id="nombre" type="text" tabindex="1" />
+      <label for="apellidos">Apellidos:</label>
+      <input name="apellidos" id="apellidos" type="text" tabindex="2" />
+    </fieldset>
+  
+    <fieldset>
+      <legend>Edad</legend>
+      <label><input type="checkbox" tabindex="20" name="edad" value="20-39" /> 20-39</label>
+      <label><input type="checkbox" tabindex="21" name="edad" value="40-59" /> 40-59</label>
+      <label><input type="checkbox" tabindex="22" name="edad" value="60-79" /> 60-79</label>
+    </fieldset>
+  </form>
+        </section>
+    </footer>
+</body>
+</html>

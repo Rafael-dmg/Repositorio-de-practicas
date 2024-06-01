@@ -1,0 +1,20 @@
+.main__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sec1 {
+    width: 50%;
+    order: 1;
+}
+
+.sec2 {
+    width: 100%;
+    order: 3;
+}
+
+.sec5 {
+    width: 50%;
+    order: 2;
+    height: auto;
+}

@@ -1,0 +1,36 @@
+Cuando defines la función de la siguiente manera:
+
+
+function jugadapc(cpu) {
+  cpu = Math.floor(Math.random() * 3);
+  // Resto del código...
+}
+
+Estás permitiendo que quien llame a la función pase un valor para la variable cpu como argumento al llamar la función. Esto significa que la función puede tomar un valor específico de cpu cuando se llama. Por ejemplo:
+
+
+var miCPU = 2;
+jugadapc(miCPU);
+En este caso, la variable miCPU se pasa como argumento a la función, y dentro de la función, cpu tomará el valor 2.
+
+Crear la variable cpu como una variable dentro de la función:
+Si defines la función de la siguiente manera:
+
+
+function jugadapc() {
+  var cpu = Math.floor(Math.random() * 3);
+  // Resto del código...
+}
+
+En este caso, la variable cpu se declara dentro de la función y no se espera que se pase como argumento. La función generará un valor aleatorio para cpu cada vez que se llama a la función sin necesidad de que alguien le pase un valor.
+
+Por ejemplo:
+
+jugadapc();
+
+En este caso, cpu será un número aleatorio entre 0, 1 y 2 generado cada vez que se llame a la función jugadapc.
+
+La diferencia clave aquí es el ámbito de la variable cpu:
+
+Si cpu es un parámetro de la función, su valor puede ser proporcionado desde el exterior al llamar a la función, lo que permite una mayor flexibilidad.
+Si cpu se declara como una variable interna de la función, su valor se genera dentro de la función y no se puede especificar desde el exterior. La función generará un valor aleatorio cada vez que se llame.

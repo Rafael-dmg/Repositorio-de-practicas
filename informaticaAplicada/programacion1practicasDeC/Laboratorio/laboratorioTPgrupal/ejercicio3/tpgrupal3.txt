@@ -1,0 +1,7 @@
+//En una central hidroeléctrica hay tres ríos afluentes que la
+abastecen, los cuales pueden estar en estado de flujo (1) o sin
+flujo (0). Realizar un programa que informe si la central está
+operativa o no, teniendo en cuenta que para estar operativa por
+lo menos dos ríos afluentes deben estar en estado de flujo.
+/////////////////////////////////////////////////////////////////////////////////
+

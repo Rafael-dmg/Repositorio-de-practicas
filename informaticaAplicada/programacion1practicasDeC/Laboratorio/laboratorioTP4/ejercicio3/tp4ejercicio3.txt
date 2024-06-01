@@ -1,0 +1,105 @@
+En trilobite SA el sueldo de una persona se calcula de la siguiente forma: 
+  Sueldo neto = Remuneraciones - Descuentos
+
+  Sabiendo que: Remuneraciones = Sueldo Basico + Antigüedad + Presentismo
+  Descuentos = Jubilacion + Obra Social
+
+  La antiguedad se calcula de acuerd a la siguiente tabla:
+
+  Codigo        Antiguedad        Porcentaje
+    1         menos de un año         0 
+    2         Desde 1 a 3 años        10
+    3         Desde 3 a 5 años        15
+    4          5 años o mas           20
+
+
+  El presentismo si corresponde es el 10% del sueldo basico.
+  La jubilaciones el 13% de las Remuneraciones.
+  La Obra Social es el 3% de las Remuneracion.
+
+  Diseñar un algoritmo que solicite el sueldo basico, si corresponde o no el presentismo(V o F) y el codigo de antigüedad e informe el total de 
+  remuneraciones, el total de descuentos y el sueldo neto del empleado.
+
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  Armado////////
+
+  cual es el sueldo basico? basico = X
+
+  presentismo (V o F) si es V = basico + (basico * 0.10) //resolver con un 'Si'
+
+  codigo de antigüedad? //ingresar segun
+  
+  Segun (codigo) hacer
+    1: 
+      antigüedad = basico + (basico * 0.10)
+    2:
+      antigüedad = basico + (basico * 0.15)
+    3:
+      antigüedad = basico + (basico * 0.20)
+    En cualquier otro caso: 
+      antigüedad = 0
+
+    remuneraciones = Sueldo Basico + Antigüedad + Presentismo
+
+  jubilacion = remuneraciones +(remuneraciones*0.13)
+  ObraSocial = remuneraciones +(remuneraciones*0.3)
+
+  Descuentos = Jubilacion + Obra Social
+
+  Sueldo neto = Remuneraciones - Descuentos
+
+  SOLICITAR: sueldo basico, si corresponde o no el presentismo(V o F) y el codigo de antigüedad
+  INFORMAR(imprimir en pantalla): total de remuneraciones, el total de descuentos y el sueldo neto del empleado.
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  Tp4 ejercicio3
+
+  basico, presentismo, remuneracion, jubilacion, obraSocial, descuentos, neto: R
+
+  Comienzo
+    Escribir "Ingrese el sueldo basico "
+    Leer basico
+
+    Esribir "El presentismo se aplica?"
+    Escribir "Ingrese 1 para si o 2 para no: "
+    Leer presentismo
+      Si (presentismo = 1) Entonces
+          presentismo = basico + (basico * 0.10)
+      Finsi
+
+  Escribir "Ingrese Antigüedad del empleado"
+  Escribir "Ingrese 1 para: Desde 1 a 3 años"
+  Escribir "Ingrese 2 para: Desde 3 a 5 años"
+  Escribir "Ingrese 3 para: 5 años o mas"
+  Escribir "En caso de menos de un año, dejar espacio en blanco"
+  leer antigüedad
+    
+    Segun antigüedad Hacer
+      1: 
+        antigüedad = basico + (basico * 0.10)
+      2:
+        antigüedad = basico + (basico * 0.15)
+      3:
+        antigüedad = basico + (basico * 0.20)
+      En cualquier otro caso: 
+        antigüedad = 0
+    Fin Segun
+
+
+  remuneraciones = Basico + Antigüedad + Presentismo
+
+  jubilacion = remuneraciones +(remuneraciones*0.13)
+  ObraSocial = remuneraciones +(remuneraciones*0.3)
+
+  descuentos = jubilacion + obraSocial
+
+
+  neto = remuneraciones - descuentos
+
+
+  Escribir "Total  de remuneraciones: ", remuneraciones
+  Escribir "Total de descuentos: ", descuentos
+  Escribir "Su total neto mensual es de: ", neto
+
