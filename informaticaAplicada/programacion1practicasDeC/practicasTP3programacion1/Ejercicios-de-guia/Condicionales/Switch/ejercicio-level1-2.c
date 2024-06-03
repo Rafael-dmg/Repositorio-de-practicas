@@ -10,32 +10,16 @@ char irOquedarse;
 
 int main ()
 {
-    printf("Cuantos creditos quiere comprar?\n");
-    printf("1 Credito para Consolas\n");
-    printf("2 Creditos para Consolas + Juegos 2D\n");
-    printf("3 Creditos para Consolas + Juegos 2D + Juegos 3D\n");
-    printf("4 Creditos para Consolas + Juegos 2D + Juegos 3D + Realidad Virtual\n");
-    printf("Cuantos Creditos vas a comprar hoy?:  ");
-    scanf("%d", &creditos);
 
-    if (creditos == 0)
-    {
-        printf("Estas seguro? tenemos buenos juegos\n");
-        printf("Ingresa Y para elegir jugar o N para elegir aburrirte: \n");
-        scanf(" %c", &irOquedarse);
-
-        if (irOquedarse == 'y')
-            printf("Veo que eres una persona divertida\n");
-        else if (irOquedarse == 'n')
-            printf("Sera para la proxima, adios\n");
-    }
-
-         printf("Cuantos Creditos vas a comprar hoy?:  ");
+     do
+     {
+        printf("Cuantos creditos quiere comprar?\n");
+        printf("1 Credito para Consolas\n");
+        printf("2 Creditos para Consolas + Juegos 2D\n");
+        printf("3 Creditos para Consolas + Juegos 2D + Juegos 3D\n");
+        printf("4 Creditos para Consolas + Juegos 2D + Juegos 3D + Realidad Virtual\n");
+        printf("Cuantos Creditos vas a comprar hoy?:  ");
         scanf("%d", &creditos);
-
-     if (creditos < 1){
-        printf("Ingresa un valor correcto de creditos\n");    
-    }
         switch (creditos)
         {
             case 1: 
@@ -55,10 +39,29 @@ int main ()
                 break;
 
                 default: 
-                    printf("Excelente! puedes acceder a la experiencia completa de Consolas, Juegos 2D, Juegos 3D y Realidad virtual!\n");
-                
+                if(creditos > 4)
+                printf("Excelente! puedes acceder a la experiencia completa de Consolas, Juegos 2D, Juegos 3D y Realidad virtual!\n");
+                break;
+                        
         }
+     
+     } while (creditos < 0);
 
+        if(creditos == 0)        
+        {
+            printf("Estas seguro? tenemos buenos juegos\n");
+            printf("Ingresa Y para elegir jugar o N para elegir aburrirte: \n");
+            scanf(" %c", &irOquedarse);
+
+            if (irOquedarse == 'y')
+            {
+                printf("Veo que eres una persona divertida\n");
+                printf("Cuantos Creditos vas a comprar hoy?:  ");
+                scanf("%d", &creditos);
+            }    
+            else
+                printf("Sera para la proxima, adios\n");
+        }
         return 0;
-    }    
+}    
 
