@@ -9,22 +9,43 @@ Si la compra supera los $50000 le descuenta un 15%.*/
 
 int main ()
 {
-  float compra, total;
-  int descuento;
+  float compra, total,descuento;
 
   do
   {
     P("Total de compra\n");
     S("%f", &compra);
-
-    if(compra > 10000)
+    
+    if(compra > 10000 && compra < 30000)
     {
-     
-
+     descuento = compra * 0.05;
+     total = compra - descuento; 
+      P("Su total de compra es: %.2f\n", compra);
+      P("Su descuento: %.2f\n", descuento);
+      P("Su total menos el descuento es: %.2f\n", total);
     } 
-    else
-    P("no se aplican descuentos\n");
-
+    else if (compra > 30000 && compra < 50000)
+    {
+      descuento = compra * 0.10;
+      total = compra - descuento;
+      P("Su total de compra es: %.2f\n", compra);
+      P("Su descuento: %.2f\n", descuento);
+      P("Su total menos el descuento es: %.2f\n", total);
+    } else if (compra > 50000)
+    {
+      descuento = compra * 0.15;
+      total = compra - descuento;
+      P("Su total de compra es: %.2f\n", compra);
+      P("Su descuento: %.2f\n", descuento);
+      P("Su total menos el descuento es: %.2f\n", total);
+    } else
+    {
+      P("No se aplicaron descuentos\n");
+      P("Su total de compra es: %.2f\n", compra);
+    }
+     
   } while (compra <= 0);
+
+  
   
 }

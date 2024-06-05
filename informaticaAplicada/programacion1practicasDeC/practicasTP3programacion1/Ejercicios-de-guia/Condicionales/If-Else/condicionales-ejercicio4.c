@@ -2,10 +2,12 @@
 // #define P printf
 // #define S scanf
 
-float coefA, coefB, res;
+
 
 int main () 
 {
+    float coefA, coefB, res;
+
     printf("ingrese valor A: ");
     scanf("%f", &coefA);
     printf("Ingrese valor B: ");
