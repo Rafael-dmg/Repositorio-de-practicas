@@ -1,41 +1,39 @@
 #include <stdio.h>
-#define p printf
-#define s scanf
+#define P printf
+#define S scanf
 
 //prototipo de variables
-int verf(int num1, int num2);
-//void cargarDato (float*);
+int esMultiplo(int, int);
+void cargarDatos(int*, int*);
 
-float num1, num2, op;
-int multiplo;
 
-int main()
+
+int main(void)
 {
-  p("\nIngrese dato 1  \n");
-  s("%f", &num1);
-  p("\nIngrese dato 2  \n");
-  s("%f", &num2);
+  int num1, num2, multiplo;
 
-  verf(num1, num2);
-
-  p("%d", multiplo);
+  cargarDatos(&num1, &num2);
   //ingresar validacion y e imprimir mensaje de comprobacion de que los datos son multiplos entre ellos
+  multiplo = esMultiplo(num1, num2);
+  if(multiplo == 0)
+    P("Son multiplos entre si. \n");
+  else
+    P("No son multiplos entre si. \n");  
 }
 
 
-// void cargarDato(float* num)
-// {
-//     p("\nIngrese un numero: ");
-//     s("%f", num1);
-//     p("\nIngrese un numero: ");
-//     s("%f", num2);
-// }
 
-int verf(int num1, int num2)
+void cargarDatos(int* num1, int* num2)
 {
-  int multiplo;
-  multiplo = num1 % num2;
-  return multiplo;
+  P("Ingrese primer valor: \n");
+  S("%d", num1);
+  P("Ingrese segundo valor: \n");
+  S("%d", num2);
+
 }
 
-/*verificacion rapida de verf si es mayor o menor a 1? o de otra manera*/
+
+int esMultiplo(int num1, int num2)
+{
+  return num1 % num2;
+}
