@@ -13,7 +13,6 @@ int main(void)
   int num1, num2, multiplo;
 
   cargarDatos(&num1, &num2);
-  //ingresar validacion y e imprimir mensaje de comprobacion de que los datos son multiplos entre ellos
   multiplo = esMultiplo(num1, num2);
   if(multiplo == 0)
     P("Son multiplos entre si. \n");

@@ -16,7 +16,7 @@ int main ()
 
   for(int i = num; i > 0; i--)
   {
-    rest = rest * i;
+    rest += i;
 
     P("valor de i %d\n", i);
     P("El valor del factorial es: %d\n", rest);
