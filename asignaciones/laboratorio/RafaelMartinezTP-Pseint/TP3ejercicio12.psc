@@ -8,8 +8,6 @@ Algoritmo TP3ejercicio12
 	Escribir "Ingrese un valor de 3 cifras"
 	Leer cifra
 	
-//	HAY QUE CORREGIR LOGICA EN CUANTO A VALIDACION DE NUMEROS IGUALES
-	
 	si(cifra < 100 O cifra > 999)
 		Escribir "El numero ingresado no es correcto"
 		

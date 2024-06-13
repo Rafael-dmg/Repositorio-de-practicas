@@ -18,7 +18,9 @@ Algoritmo TP3ejercicio14
 			numC <- aux
 		FinSi
 		
-		Escribir numA, numB, numC
+		Escribir numA
+		Escribir numB
+		Escribir numC
 	FinSi
 	
 	si (numB > numC y numB > numA) Entonces
@@ -32,7 +34,9 @@ Algoritmo TP3ejercicio14
 			numB <- aux
 		FinSi
 		
-		Escribir numA, numB, numC
+		Escribir numA
+		Escribir numB
+		Escribir numC
 	FinSi
 	
 	si (numC > numA y numC > numB) Entonces
@@ -47,7 +51,9 @@ Algoritmo TP3ejercicio14
 			numC <- aux
 		FinSi
 		
-		Escribir numA, numB, numC
+		Escribir numA
+		Escribir numB
+		Escribir numC
 	FinSi	
 	
 	

@@ -32,104 +32,104 @@ Algoritmo TP3ejercicio17
                 Escribir "No coincide fecha del dia con el mes"
 			FinSi
 			
-			02:
-				Si (año mod 4 == 0) Entonces
-					Si (año mod 100 == 0) Entonces
-						Si (año mod 400 == 0) Entonces
-							año = 1
-						Sino
-							año = 0
-						FinSi
-					Sino
+		02:
+			Si (año mod 4 == 0) Entonces
+				Si (año mod 100 == 0) Entonces
+					Si (año mod 400 == 0) Entonces
 						año = 1
+					Sino
+						año = 0
 					FinSi
 				Sino
-					año = 0
+					año = 1
+				FinSi
+			Sino
+				año = 0
+			FinSi
+			
+			Si(año == 1 & dia <= 29) Entonces
+				Escribir "Febrero"
+			Sino 
+				Escribir "El mes ingresado no es valido"
+			FinSi
+				
+			03:
+				Si (dia <= 31) Entonces
+					mesEsc = 'Marzo'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
 				FinSi
 				
-				Si(año == 1 & dia <= 29) Entonces
-					Escribir "Febrero"
-				Sino 
-					Escribir "El mes ingresado no es valido"
+					
+			04:
+				Si (dia <= 30  ) Entonces
+					mesEsc = 'Abril'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
 				FinSi
-					
-				03:
-					Si (dia <= 31) Entonces
-						mesEsc = 'Marzo'
-					sino 
-						Escribir "No coincide fecha del dia con el mes"
-					FinSi
-					
-						
-				04:
-					Si (dia <= 30  ) Entonces
-						mesEsc = 'Abril'
-					sino 
-						Escribir "No coincide fecha del dia con el mes"
-					FinSi
-					
-					05:
-						Si (dia <= 31) Entonces
-							mesEsc = 'Mayo'
-						sino 
-							Escribir "No coincide fecha del dia con el mes"
-						FinSi
-						
-					06:
-						Si (dia <= 30  ) Entonces
-							mesEsc = 'Junio'
-						sino 
-							Escribir "No coincide fecha del dia con el mes"
-						FinSi
-						
-					07:
-						Si (dia <= 31) Entonces
-							mesEsc = 'Julio'
-						sino 
-							Escribir "No coincide fecha del dia con el mes"
-						FinSi
-						
-					08:
-						Si (dia <= 31) Entonces
-							mesEsc = 'Agosto'
-						sino 
-							Escribir "No coincide fecha del dia con el mes"
-						FinSi
-						
-					09:
-						Si (dia <= 30  ) Entonces
-							mesEsc = 'Septiembre'
-						sino 
-							Escribir "No coincide fecha del dia con el mes"
-						FinSi
-						
-						10:
-							Si (dia <= 31) Entonces
-								mesEsc = 'Octubre'
-							sino 
-								Escribir "No coincide fecha del dia con el mes"
-							FinSi
-							
-							11:
-								Si (dia <= 30  ) Entonces
-									mesEsc = 'Noviembre'
-								sino 
-									Escribir "No coincide fecha del dia con el mes"
-								FinSi
-								
-							12: 
-								Si (dia <= 31) Entonces
-									mesEsc = 'Diciembre'
-								sino 
-									Escribir "No coincide fecha del dia con el mes"
-								FinSi
+				
+			05:
+				Si (dia <= 31) Entonces
+					mesEsc = 'Mayo'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
+				FinSi
+				
+			06:
+				Si (dia <= 30  ) Entonces
+					mesEsc = 'Junio'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
+				FinSi
+				
+			07:
+				Si (dia <= 31) Entonces
+					mesEsc = 'Julio'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
+				FinSi
+				
+			08:
+				Si (dia <= 31) Entonces
+					mesEsc = 'Agosto'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
+				FinSi
+				
+			09:
+				Si (dia <= 30  ) Entonces
+					mesEsc = 'Septiembre'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
+				FinSi
+				
+			10:
+				Si (dia <= 31) Entonces
+					mesEsc = 'Octubre'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
+				FinSi
+				
+			11:
+				Si (dia <= 30  ) Entonces
+					mesEsc = 'Noviembre'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
+				FinSi
+				
+			12: 
+				Si (dia <= 31) Entonces
+					mesEsc = 'Diciembre'
+				sino 
+					Escribir "No coincide fecha del dia con el mes"
+				FinSi
 
-							De Otro Modo:
-								Escribir "Mes no válido"
+			De Otro Modo:
+				Escribir "Mes no válido"
+			
+			Fin Segun
 							
-							Fin Segun
-									
-										
-												Escribir "La fecha indicada es el: ", dia," de ", mesEsc, " de ", año
-	
+								
+		Escribir "La fecha indicada es el: ", dia," de ", mesEsc, " de ", año
+
 FinAlgoritmo
