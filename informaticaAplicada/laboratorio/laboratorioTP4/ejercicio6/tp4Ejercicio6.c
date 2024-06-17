@@ -39,7 +39,7 @@ int main() {
             break;
         default:
             descuento = 0;
-            printf("No se aplico ningun descuento, mejor suerte para la proxima\n");
+            printf("No se aplico ningun descuento\n");
             totalFinal = compra; // No se aplica descuento
             break;
     }
