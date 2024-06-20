@@ -2,7 +2,7 @@
 
 Algoritmo TP5ejercicio2p2
 	definir num Como Real
-	flag <- 0
+	cont <- 0
 	
 	Para i <- 1 Hasta 20 Con Paso 1 Hacer
 		Escribir "Ingrese los numeros a comparar"
@@ -11,10 +11,10 @@ Algoritmo TP5ejercicio2p2
 		Escribir "El numero es: ", num
 		
 		Si (num < 0) Entonces
-			flag <- flag + 1
+			cont <- cont + 1
 		FinSi
 	Fin Para
 	
 
-	Escribir "Hubo una cantidad de: ", flag, " negativos"
+	Escribir "Hubo una cantidad de: ", cont, " negativos"
 FinAlgoritmo

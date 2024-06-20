@@ -24,12 +24,10 @@ int main ()
         }
       break;
   }
-
 }
 
 int tempMedia(int *tempMaxima, int *tempMinima)
 {
-  
   P("Ingrese el valor de temperaturas\n");
   P("Temperatura maxima: \n");
   S("%d", tempMaxima);
@@ -46,7 +44,7 @@ void ingDias(int *dias)
 {
   do
   {
-    P("Cuantos dias vas a ingresar?\n");
+    P("Cuantos dias va a ingresar?\n");
     P("---Seleccione 0 para salir---\n");
     S("%d", dias);
     if(*dias > 10)
