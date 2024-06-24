@@ -1,46 +1,54 @@
-#include <stdio.h>
-#define P printf
-#define S scanf
+// #include <stdio.h>
+// #define P printf
+// #define S scanf
 
-int potencia (int, int, int*);
+// int potencia (int, int, int*);
 
-int main(void)
-{
+// int main(void)
+// {
 
-}
+// }
 
-int potencia(int base, int exponente, int *resultado)
-{
-  P("Ingrese la base\n");
-  S("%d", base);
-  P("Ingrese el exponente\n");
-  S("%d", exponente);
+// int potencia(int base, int exponente, int *resultado)
+// {
+//   P("Ingrese la base\n");
+//   S("%d", base);
+//   P("Ingrese el exponente\n");
+//   S("%d", exponente);
 
-  *resultado = base * exponente;
-}
+//   *resultado = base * exponente;
+// }
 
 //EJEMPLO DE EXPONENTE ↓↓↓
 
-// #include <stdio.h>
-// void potencia(int ,int ,int*);
-// int main (void){
-//     int base,elevado,resultado = 1;
-//     int *ptr;
-//     printf("Ingrese Base de la potencia: ");
-//     scanf("%d",&base);
-//     printf("Ingrese elevacion de la potencia: ");
-//     scanf("%d",&elevado);
-//     ptr=&resultado;
-//     potencia(base,elevado,ptr);
-//     printf("El resultado es %d",resultado);
-//     return 0;
-// }
-// void potencia (int base,int elevado,int *res){
-//     for (int i = 1; i <= elevado; i++)
-//     {
-//         *res *= base;
-//     }    
-// }
+#include <stdio.h>
+
+void potencia(int ,int ,int*);
+
+int main (void)
+{
+    int base,elevado,resultado = 1;
+    int *ptr;
+
+    printf("Ingrese Base de la potencia: ");
+    scanf("%d",&base);
+    printf("Ingrese elevacion de la potencia: ");
+    scanf("%d",&elevado);
+
+    ptr=&resultado;
+
+    potencia(base,elevado,ptr);
+    printf("El resultado es %d",resultado);
+
+    return 0;
+}
+
+void potencia (int base,int elevado,int *resultado){
+    for (int i = 1; i <= elevado; i++)
+    {
+        *resultado *= base;
+    }    
+}
 
 //EJEMPLO DE ABSOLUTO ↓↓↓
 
