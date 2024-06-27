@@ -21,34 +21,34 @@
 
 //EJEMPLO DE EXPONENTE ↓↓↓
 
-#include <stdio.h>
+// #include <stdio.h>
 
-void potencia(int ,int ,int*);
+// void potencia(int ,int ,int*);
 
-int main (void)
-{
-    int base,elevado,resultado = 1;
-    int *ptr;
+// int main (void)
+// {
+//     int base,elevado,resultado = 1;
+//     // int *ptr;
 
-    printf("Ingrese Base de la potencia: ");
-    scanf("%d",&base);
-    printf("Ingrese elevacion de la potencia: ");
-    scanf("%d",&elevado);
+//     printf("Ingrese Base de la potencia: ");
+//     scanf("%d",&base);
+//     printf("Ingrese elevacion de la potencia: ");
+//     scanf("%d",&elevado);
 
-    ptr=&resultado;
+//     // ptr=&resultado;
 
-    potencia(base,elevado,ptr);
-    printf("El resultado es %d",resultado);
+//     potencia(base,elevado, &resultado);
+//     printf("El resultado es %d\n", resultado);
 
-    return 0;
-}
+//     return 0;
+// }
 
-void potencia (int base,int elevado,int *resultado){
-    for (int i = 1; i <= elevado; i++)
-    {
-        *resultado *= base;
-    }    
-}
+// void potencia (int base,int elevado,int *resultado){
+//     for (int i = 1; i <= elevado; i++)
+//     {
+//         *resultado *= base;
+//     }    
+// }
 
 //EJEMPLO DE ABSOLUTO ↓↓↓
 
@@ -84,34 +84,35 @@ void potencia (int base,int elevado,int *resultado){
 
 //RESOLUCION PROPIA DE EJERCICIO ↓↓↓
 
-// #include <stdio.h>
-// #define P printf
-// #define S scanf
+#include <stdio.h>
+#define P printf
+#define S scanf
 
-// int resultado (int numero, int *absoluto );
+int resultado (int numero, int *absoluto );
 
-// int main(void)
-// {
-//   int numero = 0, absoluto;
+int main(void)
+{
+  int numero = 0, absoluto;
 
-//   resultado(numero, &absoluto);
-// }
+  resultado(numero, &absoluto);
+}
 
-// int resultado(int numero, int *absoluto) 
-// {
-//   P("Ingrese un valor\n");
-//   S("%d", &numero);
+int resultado(int numero, int *absoluto) 
+{
+  P("Ingrese un valor\n");
+  S("%d", &numero);
 
-//   // if(numero >= 0)
-//   //  *absoluto = numero;
-//   //  else
-//   //  *absoluto = numero + (numero * (-2));
+  // if(numero >= 0)
+  //  *absoluto = numero;
+  //  else
+  //  *absoluto = numero + (numero * (-2));
   
-//   *absoluto = (numero > 0) ? numero : numero + (numero * (-2));
-//   P("El valor absoluto es: %d\n", *absoluto);
+  *absoluto = (numero > 0) ? numero : numero + (numero * (-2));
+  
+  P("El valor absoluto es: %d\n", *absoluto);
 
-//   return 0;
-// }
+  return 0;
+}
 
 //EJEMPLO DE TERNARIO ↓↓↓
 
@@ -132,8 +133,8 @@ void potencia (int base,int elevado,int *resultado){
 //     s("%d",&num);
 
 //     res = (num>=0)? 1 : 0; 
-/*Aca podemos asignarle un valor a la variable directamente con un ternario en 
-lugar de crear un if para la opcion de la asignacion */
+// /*Aca podemos asignarle un valor a la variable directamente con un ternario en 
+// lugar de crear un if para la opcion de la asignacion */
 
 //     /*
 //     if(res)

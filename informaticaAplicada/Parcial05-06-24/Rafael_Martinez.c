@@ -158,7 +158,7 @@ int areaMasConcurrida(int biblioteca, int laboratorio, int aula, int *mayor, int
     {
         *mayor = aula;
         if (biblioteca > laboratorio)
-        {
+        { 
             *medio = biblioteca;
             *menor = laboratorio;
         }
