@@ -6,14 +6,14 @@ int mostrarDatos(int, int, int);
 void registrarAsistencia(int*);
 void mostrarEstadisticas(int, int, int);
 int areaMasConcurrida(int, int, int, int*, int*, int*);
-int areaMenosConcurrida(int , int , int , int *mayor, int *medio, int *menor);
 int menu(void);
 
 int main (void)
 {
-  int op, biblioteca, laboratorio, aula, elec, mayor, medio, menor;
+  int op, biblioteca, laboratorio, aula, elec, mayor, medio, menor, alumBiblioteca  = 50, alumLaboratorio = 50, alumAula = 50;
+  float promedio = 0;
 
-  do
+  do 
   {
     op =menu();
     switch(op)
@@ -22,60 +22,53 @@ int main (void)
           do
           {
             registrarAsistencia(&elec);
-
+          
             switch (elec)
             {
             case 1:
-                 do
+                do
                 {
                     P("Cargue alumnos de Laboratorio\n");
-                    S("%d", &laboratorio);
-                    if (laboratorio > 50)
-                    P("La cantidad maxima cantidad de alumnos es de 50 por sector\n");
-                } while (laboratorio <= 0 || laboratorio >50);
-                break;
+                    S("%d", &biblioteca);
+                } while (biblioteca <= 0);
+                  break;
 
               case 2:
-                 do
+                  do
                 {
                     P("Cargue alumnos de Biblioteca\n");
-                    S("%d", &biblioteca);
-                    if (biblioteca > 50)
-                    P("La cantidad maxima cantidad de alumnos es de 50 por sector\n");
-                } while (biblioteca <= 0 || biblioteca >50);
-                  break;
+                    S("%d", &laboratorio);
+                } while (laboratorio <= 0);
+                break;
 
               case 3:
                   do
               {
                   P("Cargue alumnos de Aula\n");
                   S("%d", &aula);
-                  if (aula > 50)
-                    P("La cantidad maxima cantidad de alumnos es de 50 por sector\n");
-              } while (aula <= 0 || aula <50);
+              } while (aula <= 0);
                 break;
-
+            
             }
 
           } while (elec != 0);
-          break;
+          break; 
 
-        case 2:
+      case 2:
+            
+            mostrarDatos(biblioteca, laboratorio, aula);
+            break; 
 
-                mostrarDatos(biblioteca, laboratorio, aula);
-                break;
+      case 3:
+            mostrarEstadisticas (biblioteca, laboratorio, aula);
+            break; 
 
-        case 3:
-                mostrarEstadisticas (biblioteca, laboratorio, aula);
-                break;
+      case 4:
+          areaMasConcurrida(biblioteca, laboratorio, aula, &mayor, &medio, &menor);
+            break; 
 
-        case 4:
-            areaMasConcurrida(biblioteca, laboratorio, aula, &mayor, &medio, &menor);
-                break;
-
-        case 5:
-            areaMenosConcurrida(biblioteca, laboratorio, aula, &mayor, &medio, &menor);
-                break;
+      case 5: 
+            break; 
      }
 
 } while (op != 0);
@@ -124,27 +117,15 @@ int mostrarDatos(int biblioteca, int laboratorio, int aula)
 
 void mostrarEstadisticas(int biblioteca, int laboratorio, int aula)
 {
-    int porcentajeBib, porcentajeLab, porcentajeAu;
-    int alumBiblioteca  = 50;
-    int alumLaboratorio = 50; 
-    int alumAula = 50;
 
-  float promedio = (biblioteca + laboratorio + aula) / 3.0;
- 
-    porcentajeBib = ((float)biblioteca / alumBiblioteca) * 100;
-    porcentajeLab = ((float)laboratorio / alumLaboratorio) * 100;
-    porcentajeAu = ((float)aula / alumAula) * 100;
-
-    P("El promedio de alumnos es: %.2f\n", promedio);
-    P("El porcentaje de alumnos en Laboratorio es: %d%%\n", porcentajeLab);
-    P("El porcentaje de alumnos en Aula es: %d%%\n", porcentajeAu);
-    P("El porcentaje de alumnos en Biblioteca es: %d%%\n", porcentajeBib);
+ float promedio = (biblioteca + laboratorio + aula) / 3;
+ P("El promedio de alumnos es: %.2f\n", promedio);
 }
 
 int areaMasConcurrida(int biblioteca, int laboratorio, int aula, int *mayor, int *medio, int *menor)
 {
     mostrarDatos(biblioteca, laboratorio, aula);
-
+  
     if (biblioteca > laboratorio && biblioteca > aula)
     {
         *mayor = biblioteca;
@@ -177,7 +158,7 @@ int areaMasConcurrida(int biblioteca, int laboratorio, int aula, int *mayor, int
     {
         *mayor = aula;
         if (biblioteca > laboratorio)
-        {
+        { 
             *medio = biblioteca;
             *menor = laboratorio;
         }
@@ -189,61 +170,11 @@ int areaMasConcurrida(int biblioteca, int laboratorio, int aula, int *mayor, int
     }
 
     P("Mayor concurrencia: %d\n", *mayor);
-
-    return 0;
-
-}
-
-
-int areaMenosConcurrida(int biblioteca, int laboratorio, int aula, int *mayor, int *medio, int *menor)
-{
-    mostrarDatos(biblioteca, laboratorio, aula);
-
-    if (biblioteca > laboratorio && biblioteca > aula)
-    {
-        *mayor = biblioteca;
-        if (laboratorio > aula)
-        {
-            *medio = laboratorio;
-            *menor = aula;
-        }
-        else
-        {
-            *medio = aula;
-            *menor = laboratorio;
-        }
-    }
-    else if (laboratorio > biblioteca && laboratorio > aula)
-    {
-        *mayor = laboratorio;
-        if (biblioteca > aula)
-        {
-            *medio = biblioteca;
-            *menor = aula;
-        }
-        else
-        {
-            *medio = aula;
-            *menor = biblioteca;
-        }
-    }
-    else
-    {
-        *mayor = aula;
-        if (biblioteca > laboratorio)
-        {
-            *medio = biblioteca;
-            *menor = laboratorio;
-        }
-        else
-        {
-            *medio = laboratorio;
-            *menor = biblioteca;
-        }
-    }
-
+    P("Concurrencia media: %d\n", *medio);
     P("Menor concurrencia: %d\n", *menor);
 
     return 0;
-
+    
 }
+        
+      

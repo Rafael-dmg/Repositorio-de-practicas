@@ -44,7 +44,7 @@ uds y calcule la suma de todos los elementos del vector. (Utilizar funciones)*/
 #define TAMANO_VECTOR 15
 
 int VectorEnteros(int[], int*);
-void Promedio(float);
+void Promedio(int);
 
 int main()
 { 
@@ -57,7 +57,7 @@ int main()
 
   /*Ejercicio 2: finalizado el ejercicio 1, armar una funcion que calcule el promedio*/
 
-  Promedio(prom);
+  Promedio(suma);
 
   return 0;
 }
@@ -81,11 +81,10 @@ int VectorEnteros(int valores[], int *suma)
   return *suma;
 }
 
-void Promedio(float prom)
+void Promedio(int suma)
 {
-  int suma;
 
-  prom = (float)suma / TAMANO_VECTOR;
+  float prom = (float)suma / TAMANO_VECTOR;
 
   P("el Promedio es: %.2f\n", prom);
 }
