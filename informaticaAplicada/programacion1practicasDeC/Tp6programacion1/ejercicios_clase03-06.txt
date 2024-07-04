@@ -1,0 +1,12 @@
+1- Hacer un programa que capture un texto y por medio de una funcion llamada Dimension calcule
+el largo de una cadena y la devuelva al programa principal
+
+2- Hacer un programa que capture un texto y por medio de una funcion llamada pasaMinuscula 
+transforme el mismo a minuscula y lo devuelva al programa principal. [Sin tolower y sin toupper]
+
+3- Hacer un programa que capture un texto y por medio de una funcion llamada pasaMinuscula transforme
+el mismo a minuscula y lo devuelva al programa principal una vez logrado eso, realizar una funcion
+llamada vocales que me cuente cuantas son vocales.
+
+4-Hacer un prograqma que capture un texto y por medio de una funcion Invertir transforme el mismo en 
+otra cadena y lo devuelva al programa principal, cada funcion debe ser creada por uds.
