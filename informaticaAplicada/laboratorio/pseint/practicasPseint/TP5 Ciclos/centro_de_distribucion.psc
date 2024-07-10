@@ -1,5 +1,5 @@
 Algoritmo centro_de_distribucion
-    Definir codCliente, codCiudad, ventas, control, i, maxVentas, centroMaxVentas, cantidadTotal Como Entero
+    Definir codCliente, codCiudad, ventas, control, maxVentas, centroMaxVentas, cantidadTotal Como Entero
     Definir precio, sumVentas, totalVendido Como Real
     Definir ciudad Como Caracter
     Dimension ciudad[4]
@@ -157,7 +157,7 @@ Algoritmo centro_de_distribucion
 						Para i <- 1 Hasta 4 Hacer
 							cantidadTotal = cantidadTotal + cantidad[i]
 						FinPara
-						Escribir "La cantidad total de ventas es de: ", cantidadTotal
+						Escribir "La cantidad global de ventas es de: ", cantidadTotal
 						
                     FinSi
                 FinSi
