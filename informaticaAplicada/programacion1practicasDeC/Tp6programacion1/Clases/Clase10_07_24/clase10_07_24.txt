@@ -1,3 +1,9 @@
 Bubble sorting
 
 partimos de un vector que querramos ordenar 
+-la cota es el limite que ponemos para ordenar datos
+
+cota debe comenzar en menos 1 debido a que tenemos solo 4 posiciones, y al tener 4 posiciones y si empezamos desde el 
+cero, si toca el numero 4 se saldria del rango
+
+
