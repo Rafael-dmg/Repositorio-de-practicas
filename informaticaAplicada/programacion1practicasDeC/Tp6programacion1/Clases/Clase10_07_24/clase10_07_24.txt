@@ -1,0 +1,3 @@
+Bubble sorting
+
+partimos de un vector que querramos ordenar 
