@@ -9,3 +9,5 @@ cero, si toca el numero 4 se saldria del rango
 
 PARA CARGAR UN VECTOR DE CARACTERES SE HACE:
 char Nombres[N][30];
+
+fflush: funciona coomo limpiardor del bufer.
