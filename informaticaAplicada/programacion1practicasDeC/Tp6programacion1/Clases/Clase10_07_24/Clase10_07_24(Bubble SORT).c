@@ -37,6 +37,7 @@
 //         printf("%3d\n",x[i]);
 //     }
 // }
+
 // void ordenarVector(int x[], int y)
 // {
 //     // y posse laa cantidad de valores a Ordenar
@@ -65,12 +66,14 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
-#define N 10
+#define N 3
 char Nombres[N][30]; //los primeros corchetes serian las 'filas' y el segundo corchete serian las 'filas'
 
 void CargarVector(char[][30]);
 void OrdenarAscendente(char[][30], int);
-void OrdenarDescendente(char[][30], int);
+// void OrdenarDescendente(char[][30], int);
+//void ordenarVector(int [], int);
+
 void MostrarVector(char[][30], char *);
 
 int main()
@@ -78,7 +81,11 @@ int main()
   char nombre[25];
   
   CargarVector(nombre);
-  MostrarVector(nombre, "mensajito jo jo");
+  MostrarVector(nombre, "mensaje de prueba");
+  OrdenarAscendente(nombre, N);
+  MostrarVector(nombre, "Todo ordenado");
+
+  return 0;
 }
 char nombre[25];
 
@@ -88,7 +95,7 @@ void CargarVector(char nombre[][30])
     do
     {
         printf("\n Ingrese un dato <%2d> de <%2d>:",i+1,N);
-        scanf("%s",&nombre[i]);
+        scanf("%s",nombre[i]);
         i++;
     } while (i<N);
   
@@ -97,10 +104,58 @@ void CargarVector(char nombre[][30])
 void MostrarVector(char nombre[][30], char *msj)
 {
   int i;
-
+  printf("\n%s\n", msj);
   for (i = 0; i < N; i++)
   {
     printf("\n%s\n", nombre[i]);
   }
   
 }
+
+void OrdenarAscendente(char nombre[][30], int tam)
+{
+    // y posse laa cantidad de valores a Ordenar
+    int i, cota = tam - 1, k = 1; // k es una bandera, que me indica que se termino de ordenar
+    char aux[30];
+    while (k)
+    {
+        k = 0; // partimos del supuesto que esta ordenado
+        for (i = 0; i < cota; i++)
+        {
+            if (strcmp(nombre[i], nombre[i + 1])>0) //mayor que 0 para hacer el ordenamiento ascendente
+            {
+                // aqui se produce el swap
+                strcpy(aux, nombre[i]);
+                strcpy(nombre[i], nombre[i + 1]);
+                strcpy(nombre[i + 1], aux);
+                k = i; // aqui k toma el valor donde fue ordenado por ultima vez
+            }
+        }
+        cota = k; // aqui se lo pasa a cota, con lo cual lo limita en las iteracioners
+    }
+}
+
+//---------------------------------------------------------------------------------
+//
+//Version del profesor
+//
+// void OrdenarAscendente(char nombre[][30], int tam)
+// {
+//     int i,cota=tam-1,k=1;
+//     char aux[30];
+//     while(k)
+//     {
+//         k=0;
+//         for(i=0;i<cota;i++)
+//         {
+//             if(strcmp(nombre[i],nombre[i+1] )>0)
+//             {
+//                 strcpy(aux, nombre[i]);
+//                 strcpy(nombre[i],nombre[i+1]);
+//                 strcpy(nombre[i+1],aux);
+//                 k=i;
+//             }
+//         }
+//         cota=k;
+//     }    
+// }

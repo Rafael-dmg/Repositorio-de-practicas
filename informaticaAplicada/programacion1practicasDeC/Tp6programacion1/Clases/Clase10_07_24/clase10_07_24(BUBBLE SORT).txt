@@ -1,0 +1,34 @@
+Bubble sorting
+
+partimos de un vector que querramos ordenar 
+-la cota es el limite que ponemos para ordenar datos
+
+cota debe comenzar en menos 1 debido a que tenemos solo 4 posiciones, y al tener 4 posiciones y si empezamos desde el 
+cero, si toca el numero 4 se saldria del rango
+
+
+PARA CARGAR UN VECTOR DE CARACTERES SE HACE:
+char Nombres[N][30];
+
+char Nombres[N][30];
+
+void CargaVector(char[][30]);
+void OrdenarAscendente(char[][30], int);
+void OrdenarDescendente(char[][30], int);
+void MostrarVector(char[][30], char *);
+
+char nombre[25];
+gets(nombre);
+fflush(stdin);
+
+Cuando se ingresan datos en una cadena de caracteres por medio de scanf NO se utiliza el 
+ampersand, ya que el nombre del vector de la cadena, apunta directamente a la primera posicion de 
+del vector y lo toma como una redundancia.
+
+void pausa()
+{
+    printf("\nPresiona Enter para continuar...\n");
+    fflush(stdin); // Limpia el búfer de salida para asegurarse de que se muestra el mensaje
+    while (getchar() != '\n')
+        ; // Lee y descarta cualquier carácter ingresado hasta que se presione Enter
+}
