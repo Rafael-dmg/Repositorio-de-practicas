@@ -25,6 +25,10 @@ Cuando se ingresan datos en una cadena de caracteres por medio de scanf NO se ut
 ampersand, ya que el nombre del vector de la cadena, apunta directamente a la primera posicion de 
 del vector y lo toma como una redundancia.
 
+Ejemplo de como cargar un vector de cadena de caracteres: char Nombres[N][30]; 
+los primeros corchetes serian las 'filas' y el segundo corchete serian las 'columnas'
+
+
 void pausa()
 {
     printf("\nPresiona Enter para continuar...\n");

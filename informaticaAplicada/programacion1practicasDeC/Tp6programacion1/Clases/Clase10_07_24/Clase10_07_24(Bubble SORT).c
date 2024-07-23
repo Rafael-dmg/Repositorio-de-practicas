@@ -66,24 +66,27 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
-#define N 3
-char Nombres[N][30]; //los primeros corchetes serian las 'filas' y el segundo corchete serian las 'filas'
+#define N 10
+// Ejemplo de como cargar un vector de cadena de caracteres char Nombres[N][30]; //los primeros corchetes serian las 'filas' y el segundo corchete serian las 'columnas'
 
 void CargarVector(char[][30]);
 void OrdenarAscendente(char[][30], int);
-// void OrdenarDescendente(char[][30], int);
+void OrdenarDescendente(char[][30], int);
 //void ordenarVector(int [], int);
 
 void MostrarVector(char[][30], char *);
 
 int main()
 {
-  char nombre[25];
+  char nombre[25];// a
   
   CargarVector(nombre);
   MostrarVector(nombre, "mensaje de prueba");
   OrdenarAscendente(nombre, N);
-  MostrarVector(nombre, "Todo ordenado");
+  MostrarVector(nombre, "Todo ordenado de menor a mayor");
+  OrdenarDescendente(nombre, N);
+  MostrarVector(nombre, "Todo ordenado de mayor a menor");
+
 
   return 0;
 }
@@ -123,6 +126,29 @@ void OrdenarAscendente(char nombre[][30], int tam)
         for (i = 0; i < cota; i++)
         {
             if (strcmp(nombre[i], nombre[i + 1])>0) //mayor que 0 para hacer el ordenamiento ascendente
+            {
+                // aqui se produce el swap
+                strcpy(aux, nombre[i]);
+                strcpy(nombre[i], nombre[i + 1]);
+                strcpy(nombre[i + 1], aux);
+                k = i; // aqui k toma el valor donde fue ordenado por ultima vez
+            }
+        }
+        cota = k; // aqui se lo pasa a cota, con lo cual lo limita en las iteracioners
+    }
+}
+
+void OrdenarDescendente(char nombre[][30], int tam)
+{
+    // y posse laa cantidad de valores a Ordenar
+    int i, cota = tam - 1, k = 1; // k es una bandera, que me indica que se termino de ordenar
+    char aux[30];
+    while (k)
+    {
+        k = 0; // partimos del supuesto que esta ordenado
+        for (i = 0; i < cota; i++)
+        {
+            if (strcmp(nombre[i], nombre[i + 1])<0) //mayor que 0 para hacer el ordenamiento ascendente
             {
                 // aqui se produce el swap
                 strcpy(aux, nombre[i]);
