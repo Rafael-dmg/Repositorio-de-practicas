@@ -5,6 +5,11 @@
 // #include <ctype.h>
 // #include <math.h>
 // #define N 10
+
+////int main (void)
+////{}
+
+
 // void CargarVector(int [N]);
 // void mostrarVector(int [N],char *);
 // void ordenarVector(int [N], int);
