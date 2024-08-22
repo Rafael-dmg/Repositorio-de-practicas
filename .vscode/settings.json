@@ -2,6 +2,7 @@
     "livePreview.defaultPreviewPath": "/11.3 TinDog Project/solution.html",
     "editor.tabSize": 2,
     "files.associations": {
-        "Clase07-08.C": "cpp"
+        "Clase07-08.C": "cpp",
+        "Ejercicios_clase03_06.C": "cpp"
     }
 }

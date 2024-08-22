@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #define P printf
 #define S scanf
 
-int Dimension(char[]);
+void Dimension(char[]);
 
 
 int main()
@@ -18,13 +19,13 @@ int main()
   return 0;
 }
 
-int Dimension(char *strn)
+void Dimension(char strn[])
 {
   P("Ingrese una frase\n");
   //gets(strn);
-  S("%s", strn);
+  fgets(strn, 80,stdin);
 
-  return *strn;
+  
 }
 
 // int main()
