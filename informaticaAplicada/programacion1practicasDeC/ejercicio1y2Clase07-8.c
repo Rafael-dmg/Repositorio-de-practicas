@@ -8,20 +8,20 @@
 
 void CargarMatriz(int [N][N]);
 void MostrarMatriz(int [N][N]);
-void Mayor(int [N][N]);
-//void Encontrar(int [N][N], int);
+int Mayor(int [N][N]);
+void Encontrar(int [N][N]);
 
 int main (void)
 {
 
-    int mat[N][N];
+    int mat[N][N], mayor;
     srand(time (NULL));
     CargarMatriz(mat);
     MostrarMatriz(mat);
-    Mayor(mat);
-    //Encontrar(mat, max);
+    mayor = Mayor(mat);
+    Encontrar(mat);
 
-
+    //printf("El mayor es: %d\n", mayor);
     return 0;
 }
 
@@ -52,8 +52,8 @@ void MostrarMatriz(int mat[N][N])
     }
 }
 
-void Mayor (int mat[N][N]){
-    int i, j, max, fil=0, col=0;
+int Mayor (int mat[N][N]){
+    int i, j, max;  //fil=0, col=0;
     max = mat[0][0];
     for (i=0; i<N; i++)
     {
@@ -62,26 +62,37 @@ void Mayor (int mat[N][N]){
             if (mat[i][j]>max)
             {
                 max = mat[i][j];
-                fil = i;
-                col = j;
+              //  fil = i;
+             // col = j;
             }
         }
     }
-
-    printf("El mayor es: %d y su posicion es %d,%d\n", max, fil, col);
+    return max;
+    //printf("El mayor es: %d y su posicion es %d,%d\n", max, fil, col);
 }
 
-// void Encontrar(int mat[N][N], int max)
-// {
-//     int i, j, aux=0, fil=0, col=0;
-//     for(i=0;i<N;i++)
-//     {
-//         for(j=0;j<N;j++)
-//         {   
-//             if(max > aux)
-//             aux = max;
-//         }
-        
-//     }
-//     printf("El mayor %3d esta en la posicion: %d%d", max, fil,col);
-// }
+void Encontrar(int mat[N][N])
+{
+ int i, j, mayor, fil=0, col=0, cont = 0;
+    for (i=0; i<N; i++)
+    {
+        for (j=0; j<N; j++)
+        {
+            if (mayor==mat[i][j])
+            {
+                fil = i;
+                col = j;
+
+                cont = cont + 1;
+            }
+
+        }
+    }  
+    printf("Pero mira que calidad papa! el mayor es: %d y el ultimo registrado esta en las coordenadas %d,%d\n", mayor,fil,col);
+    printf("El mayor fue registrado %d veces en la matriz\n", cont);
+}
+
+/*Para hacer que se cuente la primera vez que se encuentra hay que:
+guardarlo en una variable con una bandera, la primera vez que se encuentra, que corte el ciclo y que despues de ahí
+imprima el mensaje de su ubicacion.
+Para sumarlo contamos la cantidad de veces que encontramos el valor y lo agregamos en un variable contador  */
