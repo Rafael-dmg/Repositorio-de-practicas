@@ -8,20 +8,21 @@
 
 void CargarMatriz(int [N][N]);
 void MostrarMatriz(int [N][N]);
-void Mayor(int [N][N]);
+int Mayor(int [N][N]);
 //void Encontrar(int [N][N], int);
 
 int main (void)
 {
-
+    int mayor; 
     int mat[N][N];
     srand(time (NULL));
     CargarMatriz(mat);
     MostrarMatriz(mat);
-    Mayor(mat);
+    mayor = Mayor(mat);
+    
     //Encontrar(mat, max);
 
-
+    printf("el mayor es %d: ", mayor);
     return 0;
 }
 
@@ -52,7 +53,7 @@ void MostrarMatriz(int mat[N][N])
     }
 }
 
-void Mayor (int mat[N][N]){
+int Mayor (int mat[N][N]){
     int i, j, max, fil=0, col=0;
     max = mat[0][0];
     for (i=0; i<N; i++)
@@ -67,8 +68,9 @@ void Mayor (int mat[N][N]){
             }
         }
     }
-
-    printf("El mayor es: %d y su posicion es %d,%d\n", max, fil, col);
+    
+    //printf("El mayor es: %d y su posicion es %d,%d\n", max, fil, col);
+    return max;
 }
 
 // void Encontrar(int mat[N][N], int max)
