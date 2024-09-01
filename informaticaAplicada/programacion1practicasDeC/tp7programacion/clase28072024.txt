@@ -1,0 +1,46 @@
+Estructuras:
+cuadno defino es el esqueleto del struct (lo que armamos en el struct
+ejemplo: struct esqueleto)
+
+cuando declaro es el  main, 
+
+ejemplos
+
+typedef struct
+{
+  int codigo
+  char producto[30]
+  float precio
+
+}registro;
+
+int main()
+{
+  registro r[10] //registro de 10 datos como maximo
+}
+
+Ejercicio 1
+
+Crear una funcion -cargar datos- que cargue los 2 datos 
+encontrados en el Ejercicio dado. Dentro del main 
+recibe el dato, lo carga y lo muestra.
+
+los struct no van ni dentro del main, ni despues, 
+van antes de los protocolos. El orden seria:
+-----------------
+Preprocesadores
+Define
+
+Struct
+Protocolos
+
+Main
+-----------------
+
+Normalmente en los vectores es conveniente colocar un maximo de ingreso de 
+datos. Si no le ponemos un limite, ingresariamos datos hasta el infinito.
+
+Los datos en la funcion main, a menos que se vayan a utilizar, a trabajar
+con ese dato en la funcion main, no es necesario devolverlos con 
+un prototipado tipo int. Si solamente se va a mostrar un dato, 
+el prototipo es tipo void. 
