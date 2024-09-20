@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "tp1ejericio15": "c"
+        "tp1ejericio15": "c",
+        "iterator": "c"
     }
 }
