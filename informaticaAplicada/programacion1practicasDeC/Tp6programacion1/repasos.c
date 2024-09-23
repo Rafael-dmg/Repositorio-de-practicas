@@ -146,6 +146,9 @@ int Dividir(int *resul)
         P("El resultado de la operacion es: %d\n", resul);
  }
 
+
+ 
+
 //-------------------------------------------------------------------------------------------------------
 // #include <stdio.h>
 
