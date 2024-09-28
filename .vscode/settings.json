@@ -3,6 +3,12 @@
     "editor.tabSize": 2,
     "files.associations": {
         "Clase07-08.C": "cpp",
-        "Ejercicios_clase03_06.C": "cpp"
+        "Ejercicios_clase03_06.C": "cpp",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c"
     }
 }
