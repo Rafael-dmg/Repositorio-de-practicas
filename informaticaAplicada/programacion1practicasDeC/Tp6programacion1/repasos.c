@@ -147,7 +147,14 @@ int Dividir(int *resul)
  }
 
 
- 
+ /* 
+ ingresar mas de 2 cifras por operacion
+ agregar mas operaciones
+ que sea multifuncion
+ Que muestre mensajes de error
+  */
+
+
 
 // //-------------------------------------------------------------------------------------------------------
 // // #include <stdio.h>
