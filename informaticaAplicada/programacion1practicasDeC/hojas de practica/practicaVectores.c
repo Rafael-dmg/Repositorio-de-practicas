@@ -16,13 +16,13 @@ int main()
 {
  CargarVector();
  MostrarVector();
- //strlen(miVector);
+ strlen(miVector);
 }
 
 void CargarVector()
 {
   
-  gets(miVector);
+  fgets(miVector,long_,stdin);
 
   //strlen(miVector);
 }
