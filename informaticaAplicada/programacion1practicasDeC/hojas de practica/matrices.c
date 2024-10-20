@@ -19,16 +19,20 @@ int miMatriz[long_][long_];
 void CargarMatriz(int [long_][long_]);
 void MostrarMatriz(int [long_][long_]);
 int Mayor(int [long_][long_]);
+void Encontrar(int [long_][long_], int mayor);
 
 int main()
 {
-int miMatriz[long_][long_], mayor, fil, col;
+  int miMatriz[long_][long_], mayor, fil, col;
 
   srand(time (NULL));
   CargarMatriz(miMatriz);
   MostrarMatriz(miMatriz);
   mayor = Mayor(miMatriz);
-  printf("El mayor es: %d", mayor);
+  printf("El mayor es: %d\n", mayor);
+  Encontrar(miMatriz, mayor);
+
+  p("El valor de la celda 2,6 es: %d", miMatriz[2][6]);
 }
 
 void CargarMatriz(int miMatriz[long_][long_])
@@ -59,20 +63,40 @@ void MostrarMatriz(int miMatriz[long_][long_])
 
 }
 
-int Mayor(int miMatriz[long_][long_])
-{
+int Mayor(int miMatriz[long_][long_]){
     int i, j, mayor, fil=0, col=0;
     mayor = miMatriz[0][0];
     for (i=0; i<long_; i++)
     {
       for (j=0; j<long_; j++)
       {
-        if (miMatriz[i][j]>mayor)
-        {
-          mayor = miMatriz[i][j];
-        }
+          if (miMatriz[i][j]>mayor)
+          {
+            mayor = miMatriz[i][j];
+          
+          }
       }
     }
     return mayor;
 }
 
+void Encontrar(int mat[long_][long_], int mayor)
+{
+    int i, j, fil = 0, col = 0, cont = 0;
+
+    for (i = 0; i < long_; i++)
+    {
+        for (j = 0; j < long_; j++)
+        {
+            if (mayor == mat[i][j])
+            {
+                fil = i;
+                col = j;
+                cont++;
+            }
+        }
+    }
+
+    printf("El mayor es: %d y el último registrado está en las coordenadas %d,%d\n", mayor, fil, col);
+    printf("El mayor fue registrado %d veces en la matriz\n", cont);
+}
