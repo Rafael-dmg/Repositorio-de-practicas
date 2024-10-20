@@ -7,7 +7,7 @@
 
 #define p printf
 #define s scanf
-#define long_ 80
+#define long_ 5
 
 char miVector[long_];
 
