@@ -21,10 +21,11 @@ void CargarMatriz(int [long_][long_]);
 void MostrarMatriz(int [long_][long_]);
 int Mayor(int [long_][long_]);
 void Encontrar(int [long_][long_], int mayor);
+int Buscar(int, int);
 
 int main()
 {
-  int miMatriz[long_][long_], mayor, fil, col;
+  int mayor, fil=0, col=0, resul;
 
   srand(time (NULL));
   CargarMatriz(miMatriz);
@@ -33,7 +34,15 @@ int main()
   printf("El mayor es: %d\n", mayor);
   Encontrar(miMatriz, mayor);
 
-  p("El valor de la celda 2,6 es: %d", miMatriz[2][6]);
+  do
+  {
+    
+    resul = Buscar(fil, col);
+    if(resul > 0)
+      p("EL valor buscado es:\n%d", resul);
+
+  } while(fil > 0 && col > 0);
+
 }
 
 void CargarMatriz(int miMatriz[long_][long_])
@@ -114,6 +123,29 @@ void Encontrar(int mat[long_][long_], int mayor) {
   printf("\n");
 }
 
+int Buscar(int fil, int col) 
+{
+  int resul=0;
+  // p("Ingrese una opcion");
+  // s("%d", &opcion);
+  p("Ingrese la fila y la columna donde desea buscar\n");
+  p("Ingrese la fila\n");
+  s("%d", &fil);
+
+  p("Ingrese la columna\n");
+  s("%d", &col);
+
+      if (miMatriz[fil][col]>0)
+      {
+        resul = miMatriz[fil][col];
+        return miMatriz[fil][col];
+      } else 
+        return 1;
+  
+}
+
+
+
 
 
 /*
@@ -129,7 +161,7 @@ float CalcularPromedio(int mat[long_][long_])
     }
     return (float)suma / (long_ * long_);
 }
-
+-------------------------------------------------------------
 int ContarPares(int mat[long_][long_])
 {
     int i, j, cont = 0;
@@ -144,5 +176,17 @@ int ContarPares(int mat[long_][long_])
         }
     }
     return cont;
+}
+--------------------------------------------------------------
+int esPrimo(int num) {
+  if (num <= 1) {
+    return 0;  // 0 y 1 no son primos
+  }
+  for (int i = 2; i <= sqrt(num); i++) {
+    if (num % i == 0) {
+      return 0;  // No es primo si es divisible por algún número entre 2 y su raíz cuadrada
+    }
+  }
+  return 1;  // Es primo si no es divisible por ningún número en el rango anterior
 }
 */
