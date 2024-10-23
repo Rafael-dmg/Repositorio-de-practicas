@@ -127,7 +127,7 @@ void facturar(regcli clientes[Cli], articulo articulos[Art], factura facturas[],
     p("ingresa el numero de factura");
     s("%d", &facturas[0].numFactura);
     p("seleccione el cliente");
-    mostrarClientes(regcli[Cli]);
+    
     
 }
 
