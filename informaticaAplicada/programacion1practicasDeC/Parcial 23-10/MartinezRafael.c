@@ -72,13 +72,7 @@ void menu(regcli clientes[], articulo articulos[], factura facturas[], int *cont
         switch (opcion)
         {
         case 1:
-            facturar(clientes, articulos,facturas, &contfact);
-            break;
-        case 2:
-            mostrarClientes(clientes);
-            break;
-        case 3:
-            mostrarArticulos(articulos);
+            facturar(clientes, articulos,facturas, *contfact);
             break;
         case 4:
             mostrarFacturas(facturas, *contfact);
@@ -126,8 +120,8 @@ void facturar(regcli clientes[Cli], articulo articulos[Art], factura facturas[],
 
     p("ingresa el numero de factura");
     s("%d", &facturas[0].numFactura);
-    p("seleccione el cliente");
-    
+    p("Seleccione el cliente");
+    mostrarClientes(clientes);
     
 }
 
@@ -193,7 +187,4 @@ void tecla(void)
 // {
 //     p("Ingrese el numero de factura");
 //     s("%d", nFactura[MaxFacturas]);
-
-    
-
 // }
