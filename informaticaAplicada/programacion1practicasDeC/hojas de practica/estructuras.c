@@ -40,7 +40,7 @@ int main()
     p("este otro pibe tiene %d anios\n", alumno[7].edad);
     p("El pibe 1 se llama: %s", alumno[1].nombre);
 
-    p("lo quere una bocha no?\n");
+    p("lo quere una bocha no? Y: para si. Cualquier otra tecla para no\n");
     c = getchar();
 
     if(c == 'Y' || c == 'y')
