@@ -74,6 +74,12 @@ void menu(regcli clientes[], articulo articulos[], factura facturas[], int *cont
         case 1:
             facturar(clientes, articulos,facturas, *contfact);
             break;
+        case 2:
+            mostrarClientes(clientes);
+            break;
+        case 3:
+            mostrarArticulos(articulos);
+            break;
         case 4:
             mostrarFacturas(facturas, *contfact);
             break;
