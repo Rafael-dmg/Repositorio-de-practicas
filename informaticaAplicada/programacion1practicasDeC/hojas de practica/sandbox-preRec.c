@@ -23,18 +23,19 @@ int pago; // pago acumulado
 
 // prototipos definidos para que desarrollen
 void menu(void);
-//void mostrar(registro[max], int);
+//void mostrar(registro reg[max], int);
 void tecla(void);
-//void cargar(registro[max], int *);
+void cargar(registro reg[max]);
 //int verificar();
 
 
 int main()
 {
-    menu();
-    tecla();
+    int cont;
+    registro reg[max];
 
-    //cargar(registro, cont);
+    menu();
+
     //mostrar(registro, *);
 }
 
@@ -48,14 +49,13 @@ system("cls");
 
 void menu()
 {
+    registro reg[max];
     do
     {
         system("cls");
         printf("\n*** MENU DE FACTURACION ***\n");
-        printf("< 1 >. Facturar productos\n");
-        printf("< 2 >. Mostrar clientes\n");
-        printf("< 3 >. Mostrar articulos\n");
-        printf("< 4 >. Mostrar facturas\n");
+        printf("< 1 >. Cargar\n");
+        printf("< 2 >. Mostrar\n");
         printf("< 0 >. Salir\n");
         printf("\nIngrese una opcion: ");
         scanf("%d", &opcion);
@@ -63,15 +63,9 @@ void menu()
         switch (opcion)
         {
         case 1:
-            p("tu opcion fue la %d", opcion);
+            cargar(reg);
             break;
         case 2:
-            p("tu opcion fue la %d", opcion);
-            break;
-        case 3:
-            p("tu opcion fue la %d", opcion);
-            break;
-        case 4:
             p("tu opcion fue la %d", opcion);
             break;
         case 0:
@@ -84,16 +78,28 @@ void menu()
     } while (opcion != 0);
 }
 
-void cargar()
+void cargar(registro reg[max])
 {
     
+
+    printf("Ingrese el codigo del profesional: ");
+    scanf("%d", reg[0].cod_prof);
+    printf("Ingrese el nombre: ");
+    scanf("%[^\n]", reg[0].nom_prof[30]);
+    // printf("Ingrese la cantidad de inspecciones: ");
+    // scanf();
+    // printf("Ingrese la cantidad de horas trabajadas: ");
+    // scanf();
+    // printf("Ingrese el pago: ");
+
+
 }
 
 
-void mostrar()
-{
+// void mostrar()
+// {
     
-}
+// }
 
 /*
 Requerimientos:
