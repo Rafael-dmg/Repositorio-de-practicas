@@ -85,7 +85,7 @@ void cargar(registro reg[max])
     printf("Ingrese el codigo del profesional: ");
     scanf("%d", reg[0].cod_prof);
     printf("Ingrese el nombre: ");
-    scanf("%[^\n]", reg[0].nom_prof[30]);
+    scanf("[%^\n]", reg[0].nom_prof[30]);
     // printf("Ingrese la cantidad de inspecciones: ");
     // scanf();
     // printf("Ingrese la cantidad de horas trabajadas: ");
