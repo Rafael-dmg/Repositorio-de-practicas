@@ -82,7 +82,7 @@ void menu()
     } while (opcion != 0);
 }
 
-void cargar(registro reg[max], )
+void cargar(registro reg[max], int *n)
 {
 
 }
