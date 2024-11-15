@@ -23,9 +23,9 @@ int pago; // pago acumulado
 
 // prototipos definidos para que desarrollen
 void menu(void);
-//void mostrar(registro[max], int);
+void cargar(registro reg[max], int *);
+void mostrar(registro reg[max], int);
 void tecla(void);
-//void cargar(registro[max], int *);
 //int verificar();
 
 
@@ -54,8 +54,6 @@ void menu()
         printf("\n*** MENU DE FACTURACION ***\n");
         printf("< 1 >. Facturar productos\n");
         printf("< 2 >. Mostrar clientes\n");
-        printf("< 3 >. Mostrar articulos\n");
-        printf("< 4 >. Mostrar facturas\n");
         printf("< 0 >. Salir\n");
         printf("\nIngrese una opcion: ");
         scanf("%d", &opcion);
@@ -84,7 +82,7 @@ void menu()
     } while (opcion != 0);
 }
 
-void cargar()
+void cargar(registro reg[max], )
 {
 
 }
