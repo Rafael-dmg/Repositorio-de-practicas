@@ -3,9 +3,9 @@
 
 int main(void)
 {
-    printf("\n\tHello World\n\n");
+    printf("\n\tHello World\n\n \c") ;
 
     printf("Presiona cualquier tecla para finalizar el programa");
     getch();
-    system("code");
+    //system("code");
 }

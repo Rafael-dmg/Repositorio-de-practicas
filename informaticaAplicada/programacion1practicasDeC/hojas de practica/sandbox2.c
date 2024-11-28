@@ -119,13 +119,6 @@ void cargar(registro reg[], int *cont)
     }
 }
 
-
-// void mostrar(registro reg[max]) //agregar contador de unidades
-// {
-
-// }
-
-
 void tecla() {
     printf("\nPresione cualquier tecla para continuar !!!!\n");
     getch();

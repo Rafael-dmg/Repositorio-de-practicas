@@ -17,7 +17,7 @@ void MostrarDatos(registro_t reg[_LONG]);
 
 int main()
 {
-    registro_t reg[_LONG];
+    |
 
     CargarDatos(reg);
 
